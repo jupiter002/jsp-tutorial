@@ -1,0 +1,668 @@
+!SESSION 2023-06-02 09:39:09.249 -----------------------------------------------
+eclipse.buildId=4.27.0.20230309-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-06-02 09:39:10.398
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-06-02 09:39:35.096
+!MESSAGE Logback config file: C:\Users\y\Desktop\kjh\jsp\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-06-02 09:39:37.089
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-06-02 09:39:37.089
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-06-02 09:39:37.089
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-06-02 09:39:42.315
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\y'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2023-06-02 11:37:52.444 -----------------------------------------------
+eclipse.buildId=4.27.0.20230309-1200
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-06-02 11:37:55.478
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-06-02 11:38:04.421
+!MESSAGE Logback config file: C:\Users\y\Desktop\kjh\jsp\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-06-02 11:38:23.294
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-06-02 11:38:23.294
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-06-02 11:38:23.294
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-06-02 11:38:29.053
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\y'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-06-02 11:49:49.286
+!MESSAGE jik7194%252540naver.com@github.com:jupiter002/jsp-tutorial.git: Cannot log in at github.com:22
+publickey: trying ssh-rsa key ~\.ssh\id_rsa with signature type rsa-sha2-512
+publickey: no more keys to try
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: jik7194%252540naver.com@github.com:jupiter002/jsp-tutorial.git: Cannot log in at github.com:22
+publickey: trying ssh-rsa key ~\.ssh\id_rsa with signature type rsa-sha2-512
+publickey: no more keys to try
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:192)
+	at org.eclipse.jgit.api.LsRemoteCommand.call(LsRemoteCommand.java:131)
+	at org.eclipse.egit.core.op.ListRemoteOperation.run(ListRemoteOperation.java:116)
+	at org.eclipse.egit.ui.internal.clone.SourceBranchPage$9.run(SourceBranchPage.java:377)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.jgit.errors.TransportException: jik7194%252540naver.com@github.com:jupiter002/jsp-tutorial.git: Cannot log in at github.com:22
+publickey: trying ssh-rsa key ~\.ssh\id_rsa with signature type rsa-sha2-512
+publickey: no more keys to try
+	at org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:182)
+	at org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:101)
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:256)
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:1)
+	at org.eclipse.jgit.transport.SshTransport.getSession(SshTransport.java:107)
+	at org.eclipse.jgit.transport.TransportGitSsh$SshFetchConnection.<init>(TransportGitSsh.java:281)
+	at org.eclipse.jgit.transport.TransportGitSsh.openFetch(TransportGitSsh.java:153)
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:170)
+	... 4 more
+Caused by: org.apache.sshd.common.SshException: No more authentication methods available
+	at org.apache.sshd.common.future.AbstractSshFuture.verifyResult(AbstractSshFuture.java:127)
+	at org.apache.sshd.client.future.DefaultAuthFuture.verify(DefaultAuthFuture.java:39)
+	at org.apache.sshd.client.future.DefaultAuthFuture.verify(DefaultAuthFuture.java:32)
+	at org.apache.sshd.common.future.VerifiableFuture.verify(VerifiableFuture.java:68)
+	at org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:172)
+	... 11 more
+Caused by: org.apache.sshd.common.SshException: No more authentication methods available
+	at org.apache.sshd.client.session.ClientUserAuthService.tryNext(ClientUserAuthService.java:379)
+	at org.apache.sshd.client.session.ClientUserAuthService.processUserAuth(ClientUserAuthService.java:315)
+	at org.apache.sshd.client.session.ClientUserAuthService.process(ClientUserAuthService.java:252)
+	at org.apache.sshd.common.session.helpers.CurrentService.process(CurrentService.java:109)
+	at org.apache.sshd.common.session.helpers.AbstractSession.doHandleMessage(AbstractSession.java:591)
+	at org.apache.sshd.common.session.helpers.AbstractSession.lambda$handleMessage$0(AbstractSession.java:522)
+	at org.apache.sshd.common.util.threads.ThreadUtils.runAsInternal(ThreadUtils.java:68)
+	at org.apache.sshd.common.session.helpers.AbstractSession.handleMessage(AbstractSession.java:521)
+	at org.apache.sshd.common.session.helpers.AbstractSession.decode(AbstractSession.java:1639)
+	at org.apache.sshd.common.session.helpers.AbstractSession.messageReceived(AbstractSession.java:482)
+	at org.eclipse.jgit.internal.transport.sshd.JGitClientSession.messageReceived(JGitClientSession.java:197)
+	at org.apache.sshd.common.session.helpers.AbstractSessionIoHandler.messageReceived(AbstractSessionIoHandler.java:64)
+	at org.apache.sshd.common.io.nio2.Nio2Session.handleReadCycleCompletion(Nio2Session.java:407)
+	at org.apache.sshd.common.io.nio2.Nio2Session$1.onCompleted(Nio2Session.java:380)
+	at org.apache.sshd.common.io.nio2.Nio2Session$1.onCompleted(Nio2Session.java:375)
+	at org.apache.sshd.common.io.nio2.Nio2CompletionHandler.lambda$completed$0(Nio2CompletionHandler.java:38)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at org.apache.sshd.common.io.nio2.Nio2CompletionHandler.completed(Nio2CompletionHandler.java:37)
+	at java.base/sun.nio.ch.Invoker.invokeUnchecked(Invoker.java:129)
+	at java.base/sun.nio.ch.Invoker$2.run(Invoker.java:221)
+	at java.base/sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-06-02 11:49:54.588
+!MESSAGE exceptionCaught(JGitClientSession[jik7194%2540naver.com@github.com/20.200.245.247:22])[state=Opened] SshException: Server key did not validate
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-06-02 11:49:54.617
+!MESSAGE jik7194%252540naver.com@github.com:jupiter002/jsp-tutorial.git: Server key did not validate
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: jik7194%252540naver.com@github.com:jupiter002/jsp-tutorial.git: Server key did not validate
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:192)
+	at org.eclipse.jgit.api.LsRemoteCommand.call(LsRemoteCommand.java:131)
+	at org.eclipse.egit.core.op.ListRemoteOperation.run(ListRemoteOperation.java:116)
+	at org.eclipse.egit.ui.internal.clone.SourceBranchPage$9.run(SourceBranchPage.java:377)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.jgit.errors.TransportException: jik7194%252540naver.com@github.com:jupiter002/jsp-tutorial.git: Server key did not validate
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:263)
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:1)
+	at org.eclipse.jgit.transport.SshTransport.getSession(SshTransport.java:107)
+	at org.eclipse.jgit.transport.TransportGitSsh$SshFetchConnection.<init>(TransportGitSsh.java:281)
+	at org.eclipse.jgit.transport.TransportGitSsh.openFetch(TransportGitSsh.java:153)
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:170)
+	... 4 more
+Caused by: org.apache.sshd.common.SshException: Server key did not validate
+	at org.apache.sshd.common.future.AbstractSshFuture.verifyResult(AbstractSshFuture.java:127)
+	at org.apache.sshd.client.future.DefaultAuthFuture.verify(DefaultAuthFuture.java:39)
+	at org.apache.sshd.client.future.DefaultAuthFuture.verify(DefaultAuthFuture.java:32)
+	at org.apache.sshd.common.future.VerifiableFuture.verify(VerifiableFuture.java:68)
+	at org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:172)
+	at org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:101)
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:256)
+	... 9 more
+Caused by: org.apache.sshd.common.SshException: Server key did not validate
+	at org.apache.sshd.client.session.AbstractClientSession.checkKeys(AbstractClientSession.java:629)
+	at org.apache.sshd.common.session.helpers.AbstractSession.handleKexMessage(AbstractSession.java:726)
+	at org.apache.sshd.common.session.helpers.AbstractSession.doHandleMessage(AbstractSession.java:590)
+	at org.apache.sshd.common.session.helpers.AbstractSession.lambda$handleMessage$0(AbstractSession.java:522)
+	at org.apache.sshd.common.util.threads.ThreadUtils.runAsInternal(ThreadUtils.java:68)
+	at org.apache.sshd.common.session.helpers.AbstractSession.handleMessage(AbstractSession.java:521)
+	at org.apache.sshd.common.session.helpers.AbstractSession.decode(AbstractSession.java:1639)
+	at org.apache.sshd.common.session.helpers.AbstractSession.messageReceived(AbstractSession.java:482)
+	at org.eclipse.jgit.internal.transport.sshd.JGitClientSession.messageReceived(JGitClientSession.java:197)
+	at org.apache.sshd.common.session.helpers.AbstractSessionIoHandler.messageReceived(AbstractSessionIoHandler.java:64)
+	at org.apache.sshd.common.io.nio2.Nio2Session.handleReadCycleCompletion(Nio2Session.java:407)
+	at org.apache.sshd.common.io.nio2.Nio2Session$1.onCompleted(Nio2Session.java:380)
+	at org.apache.sshd.common.io.nio2.Nio2Session$1.onCompleted(Nio2Session.java:375)
+	at org.apache.sshd.common.io.nio2.Nio2CompletionHandler.lambda$completed$0(Nio2CompletionHandler.java:38)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at org.apache.sshd.common.io.nio2.Nio2CompletionHandler.completed(Nio2CompletionHandler.java:37)
+	at java.base/sun.nio.ch.Invoker.invokeUnchecked(Invoker.java:129)
+	at java.base/sun.nio.ch.Invoker$2.run(Invoker.java:221)
+	at java.base/sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-06-02 11:50:06.660
+!MESSAGE exceptionCaught(JGitClientSession[juipter002@github.com/20.200.245.247:22])[state=Opened] SshException: Server key did not validate
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-06-02 11:50:06.686
+!MESSAGE juipter002@github.com:jupiter002/jsp-tutorial.git: Server key did not validate
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: juipter002@github.com:jupiter002/jsp-tutorial.git: Server key did not validate
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:192)
+	at org.eclipse.jgit.api.LsRemoteCommand.call(LsRemoteCommand.java:131)
+	at org.eclipse.egit.core.op.ListRemoteOperation.run(ListRemoteOperation.java:116)
+	at org.eclipse.egit.ui.internal.clone.SourceBranchPage$9.run(SourceBranchPage.java:377)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.jgit.errors.TransportException: juipter002@github.com:jupiter002/jsp-tutorial.git: Server key did not validate
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:263)
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:1)
+	at org.eclipse.jgit.transport.SshTransport.getSession(SshTransport.java:107)
+	at org.eclipse.jgit.transport.TransportGitSsh$SshFetchConnection.<init>(TransportGitSsh.java:281)
+	at org.eclipse.jgit.transport.TransportGitSsh.openFetch(TransportGitSsh.java:153)
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:170)
+	... 4 more
+Caused by: org.apache.sshd.common.SshException: Server key did not validate
+	at org.apache.sshd.common.future.AbstractSshFuture.verifyResult(AbstractSshFuture.java:127)
+	at org.apache.sshd.client.future.DefaultAuthFuture.verify(DefaultAuthFuture.java:39)
+	at org.apache.sshd.client.future.DefaultAuthFuture.verify(DefaultAuthFuture.java:32)
+	at org.apache.sshd.common.future.VerifiableFuture.verify(VerifiableFuture.java:68)
+	at org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:172)
+	at org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:101)
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:256)
+	... 9 more
+Caused by: org.apache.sshd.common.SshException: Server key did not validate
+	at org.apache.sshd.client.session.AbstractClientSession.checkKeys(AbstractClientSession.java:629)
+	at org.apache.sshd.common.session.helpers.AbstractSession.handleKexMessage(AbstractSession.java:726)
+	at org.apache.sshd.common.session.helpers.AbstractSession.doHandleMessage(AbstractSession.java:590)
+	at org.apache.sshd.common.session.helpers.AbstractSession.lambda$handleMessage$0(AbstractSession.java:522)
+	at org.apache.sshd.common.util.threads.ThreadUtils.runAsInternal(ThreadUtils.java:68)
+	at org.apache.sshd.common.session.helpers.AbstractSession.handleMessage(AbstractSession.java:521)
+	at org.apache.sshd.common.session.helpers.AbstractSession.decode(AbstractSession.java:1639)
+	at org.apache.sshd.common.session.helpers.AbstractSession.messageReceived(AbstractSession.java:482)
+	at org.eclipse.jgit.internal.transport.sshd.JGitClientSession.messageReceived(JGitClientSession.java:197)
+	at org.apache.sshd.common.session.helpers.AbstractSessionIoHandler.messageReceived(AbstractSessionIoHandler.java:64)
+	at org.apache.sshd.common.io.nio2.Nio2Session.handleReadCycleCompletion(Nio2Session.java:407)
+	at org.apache.sshd.common.io.nio2.Nio2Session$1.onCompleted(Nio2Session.java:380)
+	at org.apache.sshd.common.io.nio2.Nio2Session$1.onCompleted(Nio2Session.java:375)
+	at org.apache.sshd.common.io.nio2.Nio2CompletionHandler.lambda$completed$0(Nio2CompletionHandler.java:38)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at org.apache.sshd.common.io.nio2.Nio2CompletionHandler.completed(Nio2CompletionHandler.java:37)
+	at java.base/sun.nio.ch.Invoker.invokeUnchecked(Invoker.java:129)
+	at java.base/sun.nio.ch.Invoker$2.run(Invoker.java:221)
+	at java.base/sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-06-02 12:33:36.887
+!MESSAGE exceptionCaught(JGitClientSession[jik7194%2540naver.com@github.com/20.200.245.247:22])[state=Opened] SshException: Server key did not validate
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-06-02 12:33:36.915
+!MESSAGE jik7194%252540naver.com@github.com:jupiter002/jsp-tutorial.git: Server key did not validate
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: jik7194%252540naver.com@github.com:jupiter002/jsp-tutorial.git: Server key did not validate
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:192)
+	at org.eclipse.jgit.api.LsRemoteCommand.call(LsRemoteCommand.java:131)
+	at org.eclipse.egit.core.op.ListRemoteOperation.run(ListRemoteOperation.java:116)
+	at org.eclipse.egit.ui.internal.clone.SourceBranchPage$9.run(SourceBranchPage.java:377)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.jgit.errors.TransportException: jik7194%252540naver.com@github.com:jupiter002/jsp-tutorial.git: Server key did not validate
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:263)
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:1)
+	at org.eclipse.jgit.transport.SshTransport.getSession(SshTransport.java:107)
+	at org.eclipse.jgit.transport.TransportGitSsh$SshFetchConnection.<init>(TransportGitSsh.java:281)
+	at org.eclipse.jgit.transport.TransportGitSsh.openFetch(TransportGitSsh.java:153)
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:170)
+	... 4 more
+Caused by: org.apache.sshd.common.SshException: Server key did not validate
+	at org.apache.sshd.common.future.AbstractSshFuture.verifyResult(AbstractSshFuture.java:127)
+	at org.apache.sshd.client.future.DefaultAuthFuture.verify(DefaultAuthFuture.java:39)
+	at org.apache.sshd.client.future.DefaultAuthFuture.verify(DefaultAuthFuture.java:32)
+	at org.apache.sshd.common.future.VerifiableFuture.verify(VerifiableFuture.java:68)
+	at org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:172)
+	at org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:101)
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:256)
+	... 9 more
+Caused by: org.apache.sshd.common.SshException: Server key did not validate
+	at org.apache.sshd.client.session.AbstractClientSession.checkKeys(AbstractClientSession.java:629)
+	at org.apache.sshd.common.session.helpers.AbstractSession.handleKexMessage(AbstractSession.java:726)
+	at org.apache.sshd.common.session.helpers.AbstractSession.doHandleMessage(AbstractSession.java:590)
+	at org.apache.sshd.common.session.helpers.AbstractSession.lambda$handleMessage$0(AbstractSession.java:522)
+	at org.apache.sshd.common.util.threads.ThreadUtils.runAsInternal(ThreadUtils.java:68)
+	at org.apache.sshd.common.session.helpers.AbstractSession.handleMessage(AbstractSession.java:521)
+	at org.apache.sshd.common.session.helpers.AbstractSession.decode(AbstractSession.java:1639)
+	at org.apache.sshd.common.session.helpers.AbstractSession.messageReceived(AbstractSession.java:482)
+	at org.eclipse.jgit.internal.transport.sshd.JGitClientSession.messageReceived(JGitClientSession.java:197)
+	at org.apache.sshd.common.session.helpers.AbstractSessionIoHandler.messageReceived(AbstractSessionIoHandler.java:64)
+	at org.apache.sshd.common.io.nio2.Nio2Session.handleReadCycleCompletion(Nio2Session.java:407)
+	at org.apache.sshd.common.io.nio2.Nio2Session$1.onCompleted(Nio2Session.java:380)
+	at org.apache.sshd.common.io.nio2.Nio2Session$1.onCompleted(Nio2Session.java:375)
+	at org.apache.sshd.common.io.nio2.Nio2CompletionHandler.lambda$completed$0(Nio2CompletionHandler.java:38)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at org.apache.sshd.common.io.nio2.Nio2CompletionHandler.completed(Nio2CompletionHandler.java:37)
+	at java.base/sun.nio.ch.Invoker.invokeUnchecked(Invoker.java:129)
+	at java.base/sun.nio.ch.Invoker$2.run(Invoker.java:221)
+	at java.base/sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-06-02 12:34:52.536
+!MESSAGE exceptionCaught(JGitClientSession[jik7194%2540naver.com@github.com/20.200.245.247:22])[state=Opened] SshException: Server key did not validate
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-06-02 12:34:52.564
+!MESSAGE jik7194%252540naver.com@github.com:jupiter002/jsp-tutorial.git: Server key did not validate
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: jik7194%252540naver.com@github.com:jupiter002/jsp-tutorial.git: Server key did not validate
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:192)
+	at org.eclipse.jgit.api.LsRemoteCommand.call(LsRemoteCommand.java:131)
+	at org.eclipse.egit.core.op.ListRemoteOperation.run(ListRemoteOperation.java:116)
+	at org.eclipse.egit.ui.internal.clone.SourceBranchPage$9.run(SourceBranchPage.java:377)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.jgit.errors.TransportException: jik7194%252540naver.com@github.com:jupiter002/jsp-tutorial.git: Server key did not validate
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:263)
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:1)
+	at org.eclipse.jgit.transport.SshTransport.getSession(SshTransport.java:107)
+	at org.eclipse.jgit.transport.TransportGitSsh$SshFetchConnection.<init>(TransportGitSsh.java:281)
+	at org.eclipse.jgit.transport.TransportGitSsh.openFetch(TransportGitSsh.java:153)
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:170)
+	... 4 more
+Caused by: org.apache.sshd.common.SshException: Server key did not validate
+	at org.apache.sshd.common.future.AbstractSshFuture.verifyResult(AbstractSshFuture.java:127)
+	at org.apache.sshd.client.future.DefaultAuthFuture.verify(DefaultAuthFuture.java:39)
+	at org.apache.sshd.client.future.DefaultAuthFuture.verify(DefaultAuthFuture.java:32)
+	at org.apache.sshd.common.future.VerifiableFuture.verify(VerifiableFuture.java:68)
+	at org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:172)
+	at org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:101)
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:256)
+	... 9 more
+Caused by: org.apache.sshd.common.SshException: Server key did not validate
+	at org.apache.sshd.client.session.AbstractClientSession.checkKeys(AbstractClientSession.java:629)
+	at org.apache.sshd.common.session.helpers.AbstractSession.handleKexMessage(AbstractSession.java:726)
+	at org.apache.sshd.common.session.helpers.AbstractSession.doHandleMessage(AbstractSession.java:590)
+	at org.apache.sshd.common.session.helpers.AbstractSession.lambda$handleMessage$0(AbstractSession.java:522)
+	at org.apache.sshd.common.util.threads.ThreadUtils.runAsInternal(ThreadUtils.java:68)
+	at org.apache.sshd.common.session.helpers.AbstractSession.handleMessage(AbstractSession.java:521)
+	at org.apache.sshd.common.session.helpers.AbstractSession.decode(AbstractSession.java:1639)
+	at org.apache.sshd.common.session.helpers.AbstractSession.messageReceived(AbstractSession.java:482)
+	at org.eclipse.jgit.internal.transport.sshd.JGitClientSession.messageReceived(JGitClientSession.java:197)
+	at org.apache.sshd.common.session.helpers.AbstractSessionIoHandler.messageReceived(AbstractSessionIoHandler.java:64)
+	at org.apache.sshd.common.io.nio2.Nio2Session.handleReadCycleCompletion(Nio2Session.java:407)
+	at org.apache.sshd.common.io.nio2.Nio2Session$1.onCompleted(Nio2Session.java:380)
+	at org.apache.sshd.common.io.nio2.Nio2Session$1.onCompleted(Nio2Session.java:375)
+	at org.apache.sshd.common.io.nio2.Nio2CompletionHandler.lambda$completed$0(Nio2CompletionHandler.java:38)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at org.apache.sshd.common.io.nio2.Nio2CompletionHandler.completed(Nio2CompletionHandler.java:37)
+	at java.base/sun.nio.ch.Invoker.invokeUnchecked(Invoker.java:129)
+	at java.base/sun.nio.ch.Invoker$2.run(Invoker.java:221)
+	at java.base/sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-06-02 12:38:11.848
+!MESSAGE exceptionCaught(JGitClientSession[jupiter002@github.com/20.200.245.247:22])[state=Opened] SshException: Server key did not validate
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-06-02 12:38:11.876
+!MESSAGE jupiter002@github.com:jupiter002/jsp-tutorial.git: Server key did not validate
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: jupiter002@github.com:jupiter002/jsp-tutorial.git: Server key did not validate
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:192)
+	at org.eclipse.jgit.api.LsRemoteCommand.call(LsRemoteCommand.java:131)
+	at org.eclipse.egit.core.op.ListRemoteOperation.run(ListRemoteOperation.java:116)
+	at org.eclipse.egit.ui.internal.clone.SourceBranchPage$9.run(SourceBranchPage.java:377)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.jgit.errors.TransportException: jupiter002@github.com:jupiter002/jsp-tutorial.git: Server key did not validate
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:263)
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:1)
+	at org.eclipse.jgit.transport.SshTransport.getSession(SshTransport.java:107)
+	at org.eclipse.jgit.transport.TransportGitSsh$SshFetchConnection.<init>(TransportGitSsh.java:281)
+	at org.eclipse.jgit.transport.TransportGitSsh.openFetch(TransportGitSsh.java:153)
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:170)
+	... 4 more
+Caused by: org.apache.sshd.common.SshException: Server key did not validate
+	at org.apache.sshd.common.future.AbstractSshFuture.verifyResult(AbstractSshFuture.java:127)
+	at org.apache.sshd.client.future.DefaultAuthFuture.verify(DefaultAuthFuture.java:39)
+	at org.apache.sshd.client.future.DefaultAuthFuture.verify(DefaultAuthFuture.java:32)
+	at org.apache.sshd.common.future.VerifiableFuture.verify(VerifiableFuture.java:68)
+	at org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:172)
+	at org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:101)
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:256)
+	... 9 more
+Caused by: org.apache.sshd.common.SshException: Server key did not validate
+	at org.apache.sshd.client.session.AbstractClientSession.checkKeys(AbstractClientSession.java:629)
+	at org.apache.sshd.common.session.helpers.AbstractSession.handleKexMessage(AbstractSession.java:726)
+	at org.apache.sshd.common.session.helpers.AbstractSession.doHandleMessage(AbstractSession.java:590)
+	at org.apache.sshd.common.session.helpers.AbstractSession.lambda$handleMessage$0(AbstractSession.java:522)
+	at org.apache.sshd.common.util.threads.ThreadUtils.runAsInternal(ThreadUtils.java:68)
+	at org.apache.sshd.common.session.helpers.AbstractSession.handleMessage(AbstractSession.java:521)
+	at org.apache.sshd.common.session.helpers.AbstractSession.decode(AbstractSession.java:1639)
+	at org.apache.sshd.common.session.helpers.AbstractSession.messageReceived(AbstractSession.java:482)
+	at org.eclipse.jgit.internal.transport.sshd.JGitClientSession.messageReceived(JGitClientSession.java:197)
+	at org.apache.sshd.common.session.helpers.AbstractSessionIoHandler.messageReceived(AbstractSessionIoHandler.java:64)
+	at org.apache.sshd.common.io.nio2.Nio2Session.handleReadCycleCompletion(Nio2Session.java:407)
+	at org.apache.sshd.common.io.nio2.Nio2Session$1.onCompleted(Nio2Session.java:380)
+	at org.apache.sshd.common.io.nio2.Nio2Session$1.onCompleted(Nio2Session.java:375)
+	at org.apache.sshd.common.io.nio2.Nio2CompletionHandler.lambda$completed$0(Nio2CompletionHandler.java:38)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at org.apache.sshd.common.io.nio2.Nio2CompletionHandler.completed(Nio2CompletionHandler.java:37)
+	at java.base/sun.nio.ch.Invoker.invokeUnchecked(Invoker.java:129)
+	at java.base/sun.nio.ch.Invoker$2.run(Invoker.java:221)
+	at java.base/sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-06-02 12:39:08.480
+!MESSAGE exceptionCaught(JGitClientSession[jupiter002@github.com/20.200.245.247:22])[state=Opened] SshException: Server key did not validate
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-06-02 12:39:08.506
+!MESSAGE jupiter002@github.com:jupiter002/jsp-tutorial.git: Server key did not validate
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: jupiter002@github.com:jupiter002/jsp-tutorial.git: Server key did not validate
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:192)
+	at org.eclipse.jgit.api.LsRemoteCommand.call(LsRemoteCommand.java:131)
+	at org.eclipse.egit.core.op.ListRemoteOperation.run(ListRemoteOperation.java:116)
+	at org.eclipse.egit.ui.internal.clone.SourceBranchPage$9.run(SourceBranchPage.java:377)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.jgit.errors.TransportException: jupiter002@github.com:jupiter002/jsp-tutorial.git: Server key did not validate
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:263)
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:1)
+	at org.eclipse.jgit.transport.SshTransport.getSession(SshTransport.java:107)
+	at org.eclipse.jgit.transport.TransportGitSsh$SshFetchConnection.<init>(TransportGitSsh.java:281)
+	at org.eclipse.jgit.transport.TransportGitSsh.openFetch(TransportGitSsh.java:153)
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:170)
+	... 4 more
+Caused by: org.apache.sshd.common.SshException: Server key did not validate
+	at org.apache.sshd.common.future.AbstractSshFuture.verifyResult(AbstractSshFuture.java:127)
+	at org.apache.sshd.client.future.DefaultAuthFuture.verify(DefaultAuthFuture.java:39)
+	at org.apache.sshd.client.future.DefaultAuthFuture.verify(DefaultAuthFuture.java:32)
+	at org.apache.sshd.common.future.VerifiableFuture.verify(VerifiableFuture.java:68)
+	at org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:172)
+	at org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:101)
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:256)
+	... 9 more
+Caused by: org.apache.sshd.common.SshException: Server key did not validate
+	at org.apache.sshd.client.session.AbstractClientSession.checkKeys(AbstractClientSession.java:629)
+	at org.apache.sshd.common.session.helpers.AbstractSession.handleKexMessage(AbstractSession.java:726)
+	at org.apache.sshd.common.session.helpers.AbstractSession.doHandleMessage(AbstractSession.java:590)
+	at org.apache.sshd.common.session.helpers.AbstractSession.lambda$handleMessage$0(AbstractSession.java:522)
+	at org.apache.sshd.common.util.threads.ThreadUtils.runAsInternal(ThreadUtils.java:68)
+	at org.apache.sshd.common.session.helpers.AbstractSession.handleMessage(AbstractSession.java:521)
+	at org.apache.sshd.common.session.helpers.AbstractSession.decode(AbstractSession.java:1639)
+	at org.apache.sshd.common.session.helpers.AbstractSession.messageReceived(AbstractSession.java:482)
+	at org.eclipse.jgit.internal.transport.sshd.JGitClientSession.messageReceived(JGitClientSession.java:197)
+	at org.apache.sshd.common.session.helpers.AbstractSessionIoHandler.messageReceived(AbstractSessionIoHandler.java:64)
+	at org.apache.sshd.common.io.nio2.Nio2Session.handleReadCycleCompletion(Nio2Session.java:407)
+	at org.apache.sshd.common.io.nio2.Nio2Session$1.onCompleted(Nio2Session.java:380)
+	at org.apache.sshd.common.io.nio2.Nio2Session$1.onCompleted(Nio2Session.java:375)
+	at org.apache.sshd.common.io.nio2.Nio2CompletionHandler.lambda$completed$0(Nio2CompletionHandler.java:38)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at org.apache.sshd.common.io.nio2.Nio2CompletionHandler.completed(Nio2CompletionHandler.java:37)
+	at java.base/sun.nio.ch.Invoker.invokeUnchecked(Invoker.java:129)
+	at java.base/sun.nio.ch.Invoker$2.run(Invoker.java:221)
+	at java.base/sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-06-02 12:39:21.504
+!MESSAGE jik7194%252540naver.com@github.com:jupiter002/jsp-tutorial.git: Cannot log in at github.com:22
+publickey: trying ssh-rsa key ~\.ssh\id_rsa with signature type rsa-sha2-512
+publickey: no more keys to try
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: jik7194%252540naver.com@github.com:jupiter002/jsp-tutorial.git: Cannot log in at github.com:22
+publickey: trying ssh-rsa key ~\.ssh\id_rsa with signature type rsa-sha2-512
+publickey: no more keys to try
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:192)
+	at org.eclipse.jgit.api.LsRemoteCommand.call(LsRemoteCommand.java:131)
+	at org.eclipse.egit.core.op.ListRemoteOperation.run(ListRemoteOperation.java:116)
+	at org.eclipse.egit.ui.internal.clone.SourceBranchPage$9.run(SourceBranchPage.java:377)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.jgit.errors.TransportException: jik7194%252540naver.com@github.com:jupiter002/jsp-tutorial.git: Cannot log in at github.com:22
+publickey: trying ssh-rsa key ~\.ssh\id_rsa with signature type rsa-sha2-512
+publickey: no more keys to try
+	at org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:182)
+	at org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:101)
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:256)
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:1)
+	at org.eclipse.jgit.transport.SshTransport.getSession(SshTransport.java:107)
+	at org.eclipse.jgit.transport.TransportGitSsh$SshFetchConnection.<init>(TransportGitSsh.java:281)
+	at org.eclipse.jgit.transport.TransportGitSsh.openFetch(TransportGitSsh.java:153)
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:170)
+	... 4 more
+Caused by: org.apache.sshd.common.SshException: No more authentication methods available
+	at org.apache.sshd.common.future.AbstractSshFuture.verifyResult(AbstractSshFuture.java:127)
+	at org.apache.sshd.client.future.DefaultAuthFuture.verify(DefaultAuthFuture.java:39)
+	at org.apache.sshd.client.future.DefaultAuthFuture.verify(DefaultAuthFuture.java:32)
+	at org.apache.sshd.common.future.VerifiableFuture.verify(VerifiableFuture.java:68)
+	at org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:172)
+	... 11 more
+Caused by: org.apache.sshd.common.SshException: No more authentication methods available
+	at org.apache.sshd.client.session.ClientUserAuthService.tryNext(ClientUserAuthService.java:379)
+	at org.apache.sshd.client.session.ClientUserAuthService.processUserAuth(ClientUserAuthService.java:315)
+	at org.apache.sshd.client.session.ClientUserAuthService.process(ClientUserAuthService.java:252)
+	at org.apache.sshd.common.session.helpers.CurrentService.process(CurrentService.java:109)
+	at org.apache.sshd.common.session.helpers.AbstractSession.doHandleMessage(AbstractSession.java:591)
+	at org.apache.sshd.common.session.helpers.AbstractSession.lambda$handleMessage$0(AbstractSession.java:522)
+	at org.apache.sshd.common.util.threads.ThreadUtils.runAsInternal(ThreadUtils.java:68)
+	at org.apache.sshd.common.session.helpers.AbstractSession.handleMessage(AbstractSession.java:521)
+	at org.apache.sshd.common.session.helpers.AbstractSession.decode(AbstractSession.java:1639)
+	at org.apache.sshd.common.session.helpers.AbstractSession.messageReceived(AbstractSession.java:482)
+	at org.eclipse.jgit.internal.transport.sshd.JGitClientSession.messageReceived(JGitClientSession.java:197)
+	at org.apache.sshd.common.session.helpers.AbstractSessionIoHandler.messageReceived(AbstractSessionIoHandler.java:64)
+	at org.apache.sshd.common.io.nio2.Nio2Session.handleReadCycleCompletion(Nio2Session.java:407)
+	at org.apache.sshd.common.io.nio2.Nio2Session$1.onCompleted(Nio2Session.java:380)
+	at org.apache.sshd.common.io.nio2.Nio2Session$1.onCompleted(Nio2Session.java:375)
+	at org.apache.sshd.common.io.nio2.Nio2CompletionHandler.lambda$completed$0(Nio2CompletionHandler.java:38)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at org.apache.sshd.common.io.nio2.Nio2CompletionHandler.completed(Nio2CompletionHandler.java:37)
+	at java.base/sun.nio.ch.Invoker.invokeUnchecked(Invoker.java:129)
+	at java.base/sun.nio.ch.Invoker$2.run(Invoker.java:221)
+	at java.base/sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-06-02 12:39:30.074
+!MESSAGE jik7194%252540naver.com@github.com:jupiter002/jsp-tutorial.git: Cannot log in at github.com:22
+publickey: trying ssh-rsa key ~\.ssh\id_rsa with signature type rsa-sha2-512
+publickey: no more keys to try
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: jik7194%252540naver.com@github.com:jupiter002/jsp-tutorial.git: Cannot log in at github.com:22
+publickey: trying ssh-rsa key ~\.ssh\id_rsa with signature type rsa-sha2-512
+publickey: no more keys to try
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:192)
+	at org.eclipse.jgit.api.LsRemoteCommand.call(LsRemoteCommand.java:131)
+	at org.eclipse.egit.core.op.ListRemoteOperation.run(ListRemoteOperation.java:116)
+	at org.eclipse.egit.ui.internal.clone.SourceBranchPage$9.run(SourceBranchPage.java:377)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.jgit.errors.TransportException: jik7194%252540naver.com@github.com:jupiter002/jsp-tutorial.git: Cannot log in at github.com:22
+publickey: trying ssh-rsa key ~\.ssh\id_rsa with signature type rsa-sha2-512
+publickey: no more keys to try
+	at org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:182)
+	at org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:101)
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:256)
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:1)
+	at org.eclipse.jgit.transport.SshTransport.getSession(SshTransport.java:107)
+	at org.eclipse.jgit.transport.TransportGitSsh$SshFetchConnection.<init>(TransportGitSsh.java:281)
+	at org.eclipse.jgit.transport.TransportGitSsh.openFetch(TransportGitSsh.java:153)
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:170)
+	... 4 more
+Caused by: org.apache.sshd.common.SshException: No more authentication methods available
+	at org.apache.sshd.common.future.AbstractSshFuture.verifyResult(AbstractSshFuture.java:127)
+	at org.apache.sshd.client.future.DefaultAuthFuture.verify(DefaultAuthFuture.java:39)
+	at org.apache.sshd.client.future.DefaultAuthFuture.verify(DefaultAuthFuture.java:32)
+	at org.apache.sshd.common.future.VerifiableFuture.verify(VerifiableFuture.java:68)
+	at org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:172)
+	... 11 more
+Caused by: org.apache.sshd.common.SshException: No more authentication methods available
+	at org.apache.sshd.client.session.ClientUserAuthService.tryNext(ClientUserAuthService.java:379)
+	at org.apache.sshd.client.session.ClientUserAuthService.processUserAuth(ClientUserAuthService.java:315)
+	at org.apache.sshd.client.session.ClientUserAuthService.process(ClientUserAuthService.java:252)
+	at org.apache.sshd.common.session.helpers.CurrentService.process(CurrentService.java:109)
+	at org.apache.sshd.common.session.helpers.AbstractSession.doHandleMessage(AbstractSession.java:591)
+	at org.apache.sshd.common.session.helpers.AbstractSession.lambda$handleMessage$0(AbstractSession.java:522)
+	at org.apache.sshd.common.util.threads.ThreadUtils.runAsInternal(ThreadUtils.java:68)
+	at org.apache.sshd.common.session.helpers.AbstractSession.handleMessage(AbstractSession.java:521)
+	at org.apache.sshd.common.session.helpers.AbstractSession.decode(AbstractSession.java:1639)
+	at org.apache.sshd.common.session.helpers.AbstractSession.messageReceived(AbstractSession.java:482)
+	at org.eclipse.jgit.internal.transport.sshd.JGitClientSession.messageReceived(JGitClientSession.java:197)
+	at org.apache.sshd.common.session.helpers.AbstractSessionIoHandler.messageReceived(AbstractSessionIoHandler.java:64)
+	at org.apache.sshd.common.io.nio2.Nio2Session.handleReadCycleCompletion(Nio2Session.java:407)
+	at org.apache.sshd.common.io.nio2.Nio2Session$1.onCompleted(Nio2Session.java:380)
+	at org.apache.sshd.common.io.nio2.Nio2Session$1.onCompleted(Nio2Session.java:375)
+	at org.apache.sshd.common.io.nio2.Nio2CompletionHandler.lambda$completed$0(Nio2CompletionHandler.java:38)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at org.apache.sshd.common.io.nio2.Nio2CompletionHandler.completed(Nio2CompletionHandler.java:37)
+	at java.base/sun.nio.ch.Invoker.invokeUnchecked(Invoker.java:129)
+	at java.base/sun.nio.ch.Invoker$2.run(Invoker.java:221)
+	at java.base/sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-06-02 13:16:08.963
+!MESSAGE jik7194%252540naver.com@github.com:jupiter002/jsp-tutorial.git: Cannot log in at github.com:22
+publickey: trying ssh-rsa key ~\.ssh\id_rsa with signature type rsa-sha2-512
+publickey: no more keys to try
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: jik7194%252540naver.com@github.com:jupiter002/jsp-tutorial.git: Cannot log in at github.com:22
+publickey: trying ssh-rsa key ~\.ssh\id_rsa with signature type rsa-sha2-512
+publickey: no more keys to try
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:192)
+	at org.eclipse.jgit.api.LsRemoteCommand.call(LsRemoteCommand.java:131)
+	at org.eclipse.egit.core.op.ListRemoteOperation.run(ListRemoteOperation.java:116)
+	at org.eclipse.egit.ui.internal.clone.SourceBranchPage$9.run(SourceBranchPage.java:377)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.jgit.errors.TransportException: jik7194%252540naver.com@github.com:jupiter002/jsp-tutorial.git: Cannot log in at github.com:22
+publickey: trying ssh-rsa key ~\.ssh\id_rsa with signature type rsa-sha2-512
+publickey: no more keys to try
+	at org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:182)
+	at org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:101)
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:256)
+	at org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:1)
+	at org.eclipse.jgit.transport.SshTransport.getSession(SshTransport.java:107)
+	at org.eclipse.jgit.transport.TransportGitSsh$SshFetchConnection.<init>(TransportGitSsh.java:281)
+	at org.eclipse.jgit.transport.TransportGitSsh.openFetch(TransportGitSsh.java:153)
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:170)
+	... 4 more
+Caused by: org.apache.sshd.common.SshException: No more authentication methods available
+	at org.apache.sshd.common.future.AbstractSshFuture.verifyResult(AbstractSshFuture.java:127)
+	at org.apache.sshd.client.future.DefaultAuthFuture.verify(DefaultAuthFuture.java:39)
+	at org.apache.sshd.client.future.DefaultAuthFuture.verify(DefaultAuthFuture.java:32)
+	at org.apache.sshd.common.future.VerifiableFuture.verify(VerifiableFuture.java:68)
+	at org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:172)
+	... 11 more
+Caused by: org.apache.sshd.common.SshException: No more authentication methods available
+	at org.apache.sshd.client.session.ClientUserAuthService.tryNext(ClientUserAuthService.java:379)
+	at org.apache.sshd.client.session.ClientUserAuthService.processUserAuth(ClientUserAuthService.java:315)
+	at org.apache.sshd.client.session.ClientUserAuthService.process(ClientUserAuthService.java:252)
+	at org.apache.sshd.common.session.helpers.CurrentService.process(CurrentService.java:109)
+	at org.apache.sshd.common.session.helpers.AbstractSession.doHandleMessage(AbstractSession.java:591)
+	at org.apache.sshd.common.session.helpers.AbstractSession.lambda$handleMessage$0(AbstractSession.java:522)
+	at org.apache.sshd.common.util.threads.ThreadUtils.runAsInternal(ThreadUtils.java:68)
+	at org.apache.sshd.common.session.helpers.AbstractSession.handleMessage(AbstractSession.java:521)
+	at org.apache.sshd.common.session.helpers.AbstractSession.decode(AbstractSession.java:1639)
+	at org.apache.sshd.common.session.helpers.AbstractSession.messageReceived(AbstractSession.java:482)
+	at org.eclipse.jgit.internal.transport.sshd.JGitClientSession.messageReceived(JGitClientSession.java:197)
+	at org.apache.sshd.common.session.helpers.AbstractSessionIoHandler.messageReceived(AbstractSessionIoHandler.java:64)
+	at org.apache.sshd.common.io.nio2.Nio2Session.handleReadCycleCompletion(Nio2Session.java:407)
+	at org.apache.sshd.common.io.nio2.Nio2Session$1.onCompleted(Nio2Session.java:380)
+	at org.apache.sshd.common.io.nio2.Nio2Session$1.onCompleted(Nio2Session.java:375)
+	at org.apache.sshd.common.io.nio2.Nio2CompletionHandler.lambda$completed$0(Nio2CompletionHandler.java:38)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at org.apache.sshd.common.io.nio2.Nio2CompletionHandler.completed(Nio2CompletionHandler.java:37)
+	at java.base/sun.nio.ch.Invoker.invokeUnchecked(Invoker.java:129)
+	at java.base/sun.nio.ch.Invoker$2.run(Invoker.java:221)
+	at java.base/sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
