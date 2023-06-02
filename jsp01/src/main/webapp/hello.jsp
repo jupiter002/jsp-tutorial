@@ -5,6 +5,7 @@
     String name = "아무개";
     String msg = "hello";
     %>
+	
 <!DOCTYPE html>
 <html>
 <head>
