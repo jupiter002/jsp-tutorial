@@ -21,7 +21,6 @@ public class GugudanResult extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		
 		
-		
 		out.println("<!DOCTYPE html>");
 		out.println("<html>");
 		out.println("<head>");
@@ -34,7 +33,7 @@ public class GugudanResult extends HttpServlet {
 			out.println("<p>"+dan+"X"+i+"="+dan*i+"</p>");
 		}
 		out.println("<a href='javascript:history.back()'>뒤로가기</a>");
-		out.println("<a href='GugudanResult'>뒤로가기</a>");
+//		out.println("<a href='GugudanResult'>뒤로가기</a>");
 		out.println("</body>");
 		out.println("</html>");
 	

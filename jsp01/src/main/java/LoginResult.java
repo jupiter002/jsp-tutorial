@@ -17,15 +17,15 @@ public class LoginResult extends HttpServlet {
         super();
     }
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	PrintWriter out = response.getWriter();
-		String userId = request.getParameter("userId");
+	String userId = request.getParameter("userId");
 	String userpw = request.getParameter("userpw");
 	if(userId.equals("aa")&& userpw.equals("1234")) {
 	out.println("<p>succes</p>");
 	}else {
 		out.println("<p>fail</p>");
-		out.println("<a href='javascipt:history.back()'>back</a>");
+		out.println("<a href='javascript:history.back()'>back</a>");
 	}
 	
 	}
