@@ -1,3 +1,5 @@
 INDEX VERSION 1.132
+C:\Users\y\Desktop\kjh\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2750676545.index
+\db-conncet\src\main\java
 C:\Users\y\Desktop\kjh\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\875471413.index
 \jsp01\src\main\java

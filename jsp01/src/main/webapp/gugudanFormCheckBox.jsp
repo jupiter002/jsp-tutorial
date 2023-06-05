@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>	
+    
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +10,7 @@
 </head>
 <body>
 <form action="gugudanResultCheckBox.jsp">
-			<label><span>1단</span><input type='checkbox' name='dan'value='1'></label>
+				<label><span>1단</span><input type='checkbox' name='dan'value='1'></label>
 				<label><span>2단</span><input type='checkbox' name='dan'value='2'></label>
 				<label><span>3단</span><input type='checkbox' name='dan'value='3'></label>
 				<label><span>4단</span><input type='checkbox' name='dan'value='4'></label>
