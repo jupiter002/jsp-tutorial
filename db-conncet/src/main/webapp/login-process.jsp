@@ -6,8 +6,8 @@
     pageEncoding="UTF-8"%>
 <%
 
-	String pUserId = request.getParameter("userid");
-	String pUserPw = request.getParameter("userpw");
+	String pUserId = request.getParameter("userId");
+	String pUserPw = request.getParameter("userPw");
 	
 	String driver = "oracle.jdbc.OracleDriver";					// db연결
 	String url = "jdbc:oracle:thin:@localhost:1521:xe";
@@ -34,17 +34,18 @@
 		String userId = rs.getString("id");
 		String userPw = rs.getString("password");
 		String userName = rs.getString("name");
-		/* out.println("로그인 성공"); */
+		out.println("로그인 성공");
 		//request.getRequestDispatcher(path)
 		//response.sendRedirect("login-ok.jsp?userId="+userId);		
 		//response는 페이지 자체를 바뀌어버림
 		
 		//직접 주소창을 바꾸는 명령어
 		pageContext.setAttribute("pageUserId", userId);
-		request.setAttribute("userId", userId);		//서버 내부적으로 값을 보낸느 명령어
-		session.setAttribute("userId", userId);
-		//request.getRequestDispatcher("login-ok.jsp").forward(request, response);
-		RequestDispatcher dispatcher =  request.getRequestDispatcher("login-ok.jsp");
+		//request.setAttribute("userId", userId);		//서버 내부적으로 값을 보낸느 명령어
+		session.setAttribute("loggedUserId", userId);
+		session.setAttribute("loggedUserName", userName);
+		//request.getRequestDispatcher("login-ok.jsp").	forward(request, response);
+		RequestDispatcher dispatcher =  request.getRequestDispatcher("login-ok.jsp");			//
 		dispatcher.forward(request, response);
 		
 	}else{

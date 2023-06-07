@@ -1,25 +1,22 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    
-    
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ include file = "include/header.jsp" %>
 <body>
-<form action="login-process.jsp" method="post">     
-<div>
-<label><span>ID</span><input type="text" name="userid"/>
-</label>
-</div>
-<div>
-<label><span>PW</span><input type="password" name="userpw"/>
-</label>
-</div>
-
-<button>login</button>
-</form>
+  <form action="login-process.jsp" method="post">
+    <div class="container-sm mt-5">
+      <div class="row mt-5 justity-content-center">
+        <div class="col-6">
+          <div class="form-floating mb-3">
+            <input type="text" name="userId" class="form-control" id="floatingInput" placeholder="아이디를 입력해주세요" />		<!-- login-process의 String pUserId의 getParagmete랑 이름을 ㄱ맞출것 -->
+            <label for="floatingInput">ID</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" name="userPw" class="form-control" id="floatingPassword" placeholder="Password" />
+            <label for="floatingPassword">Password</label>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">로그인</button>
+    </div>
+  </form>
 </body>
-</html>
+<%@ include file = "include/footer.jsp" %>
