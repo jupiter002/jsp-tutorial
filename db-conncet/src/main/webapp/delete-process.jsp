@@ -40,13 +40,11 @@ rs = pstmt.executeQuery();
 		pstmt.setString(2, pUserPw);
 		int result = pstmt.executeUpdate();
 		if(result>0) {
-			out.println("<script>alert('회원탈퇴가 완료되었습니다');</script>");
+			session.invalidate();
+			response.sendRedirect("login-form.jsp");
 		} 
 	}
-	if(!dbUserId.equals(pUserId)  || !dbUserPw.equals(pUserPw)){
-		System.out.println(pUserId);
-		System.out.println(pUserPw);
-		System.out.println("1234");
+	else{
 	out.println("<script>alert('정보가 일치하지 않습니다. 다시 시도해주세요'); history.back();</script>");
 	}
  }

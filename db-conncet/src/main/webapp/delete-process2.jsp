@@ -35,7 +35,7 @@ int result = pstmt.executeUpdate();
  if(rs.next()){
 		if(result>0) {
 			session.invalidate();
-			response.sendRedirect("login.form.jsp");
+			response.sendRedirect("login-form.jsp");
 		}
 		else{
 			out.println("<script>alert('정보가 일치하지 않습니다. 다시 시도해주세요'); history.back();</script>");		
