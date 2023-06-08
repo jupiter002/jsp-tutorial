@@ -1,55 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
- <%@ include file = "include/header.jsp" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
 
-<form action="join-process.jsp" method="post" class="join" name="joinForm">
-  <div class="container-sm mt-5">
-    <div class="row justify-content-center">
-      <div class="col-6">
-        <div class="input-group mb-3">
-          <input type="text" name="userId" class="form-control form-control-lg userId" id="floatingInput" placeholder="아이디를 입력해주세요" />
-          <button class="btn btn-secondary" type="button" id="btnIdCheck">ID중복체크</button>
-        </div>
-        <div class="mb-3">
-          <input type="password" name="userPw" class="form-control form-control-lg" id="floatingPassword" placeholder="Password" />
-          <label for="floatingPassword">Password</label>
-        </div>
-        <div class="mb-3">
-          <input type="password" name="userPw02" class="form-control form-control-lg" id="floatingPassword02" placeholder="Password02" />
-          <label for="floatingPassword02">Password02</label>
-        </div>
-        <div class="mb-3">
-          <input type="text" name="userName" class="form-control form-control-lg" id="floatingName" placeholder="이름을 입력해주세요" />
-          <label for="floatingName">Name</label>
-        </div>
-        <div class="mb-3">
-          <input type="text" name="userEmail" class="form-control form-control-lg" id="floatinEmail" placeholder="이메일을 입력해주세요" />
-          <label for="floatingEmail">email</label>
-        </div>
-        <div class="form">
-          <div class="input-group mb-3">
-            <input type="text" class="form-control form-control-lg" name="zonecode" id="zonecode" placeholder="우편번호" readonly />
-            <button class="btn btn-secondary" type="button" id="button-addon2" onclick="searchZonecode()">Button</button>
-          </div>
-        </div>
-        <div class="mb-3">
-          <input type="text" name="userAddress" class="form-control address" id="floatingAddress" placeholder="주소를 입력해주세요" />
-          <label for="floatingAddress">Address</label>
-        </div>
-        <div class="row mb-3">
-          <div class="col">
-            <input type="text" class="form-control-lg detailAddress" placeholder="참고사항" name="detailAddress" />
-          </div>
-          <div class="col">
-            <input type="text" class="form-control-lg extraAddress" placeholder="상세주소" name="extraAddress" />
-          </div>
-        </div>
-
-        <div class="text-center"><button type="submit" id="btnSubmit" class="btn btn-outline-primary btn-lg">Join</button></div>
-      </div>
-    </div>
-  </div>
-</form>
-
+</body>
+</html>
 <script>
   const userId = document.querySelector(".userId");
   const btnIdCheck = document.querySelector("#btnIdCheck");
@@ -60,7 +20,7 @@
   let isDoubleCheck = false;
   btnSubmit.addEventListener("click", (e) => {
     if (userId.value === "") {
-      //e.preventDefault();
+      e.preventDefault();
       alert("아이디를 입력하세요.");
       joinForm.elements.userId.value = "";
       joinForm.elements.userId.focus();
@@ -177,4 +137,4 @@
   // const testEmail = "jang22@nanmail.net";
   // console.log(testEmail.match(regEmail));
 </script>
-<%@ include file = "include/footer.jsp" %>
+<%@ include file ="include/footer.jsp" %>

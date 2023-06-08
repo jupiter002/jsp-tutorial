@@ -20,7 +20,7 @@ ResultSet rs = null;
 String dbUserId ="";
 String dbUserPw ="";
 
-String sql = "select id,password from member where id = ? and password = ?";		//db에 보낼 쿼리문
+String sql = "delete from member where id = ? and password = ?";		//db에 보낼 쿼리문
 																					// select이후에 컬러명을 적어줄것
 
 Class.forName(driver);
@@ -30,26 +30,19 @@ pstmt.setString(1,pUserId);
 pstmt.setString(2,pUserPw);
 rs = pstmt.executeQuery();
 
+int result = pstmt.executeUpdate();
 
  if(rs.next()){
-	 dbUserId = rs.getString("id");
-	 dbUserPw = rs.getString("password");
-	if(dbUserId.equals(pUserId)  && dbUserPw.equals(pUserPw) ){
-		pstmt = conn.prepareStatement("delete from member where id = ? and password = ?");
-		pstmt.setString(1, pUserId);
-		pstmt.setString(2, pUserPw);
-		int result = pstmt.executeUpdate();
 		if(result>0) {
-			out.println("<script>alert('회원탈퇴가 완료되었습니다');</script>");
-		} 
+			session.invalidate();
+			response.sendRedirect("login.form.jsp");
+		}
+		else{
+			out.println("<script>alert('정보가 일치하지 않습니다. 다시 시도해주세요'); history.back();</script>");		
+		}
+	
 	}
-	if(!dbUserId.equals(pUserId)  || !dbUserPw.equals(pUserPw)){
-		System.out.println(pUserId);
-		System.out.println(pUserPw);
-		System.out.println("1234");
-	out.println("<script>alert('정보가 일치하지 않습니다. 다시 시도해주세요'); history.back();</script>");
-	}
- }
+ 
 %>
 
 

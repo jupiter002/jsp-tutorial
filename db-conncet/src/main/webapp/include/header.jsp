@@ -29,7 +29,7 @@ String loggedUserName = (String)session.getAttribute("loggedUserName");
         <li class="nav-item"><a href="join-form.jsp" class="nav-link">sing up</a></li>
         <%} else { %>
         <li class="nav-item"><a href="logout.jsp" class="nav-link">logout</a></li>
-        <li class="nav-item"><a href="info.jsp" class="nav-link">jupiter002</a></li>
+        <li class="nav-item"><a href="info.jsp" class="nav-link"><%= loggedUserName %></a></li>
         <% } %>
       </ul>
     </header>
