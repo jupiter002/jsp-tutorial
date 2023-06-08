@@ -17,13 +17,13 @@
 	PreparedStatement pstmt = null;
 	ResultSet rs = null;
 	String pLoggedUserId = (String)session.getAttribute("loggedUserId");
-	String sql = "select id,name,email,address,lpad(zonecode,5,'0') as zonecode,detailAddress  from member where id = ?"+pLoggedUserId;		//
+	String sql = "select id,name,email,address,lpad(zonecode,5,'0') as zonecode,detailAddress,extraAddress  from member where id = ?";		//
 	
 	Class.forName(driver);
 	conn = DriverManager.getConnection(url, id, pw);	//db에 연결
 	pstmt = conn.prepareStatement(sql);
-	rs = pstmt.executeQuery();
   	pstmt.setString(1,pLoggedUserId);
+	rs = pstmt.executeQuery();
 	String address = null;
 	String detailAddress = null;
 	String zonecode = null;
@@ -32,13 +32,12 @@
 	String extraAddress = null; 
 	
 	if(rs.next()){
-		address = rs.getString("address");
 		detailAddress = rs.getString("detailAddress");
 		extraAddress = rs.getString("extraAddress");
 		zonecode = rs.getString("zonecode");
 		name = rs.getString("name");
 		email = rs.getString("email");
-		
+		address = rs.getString("address");
 	}
 
     %>
