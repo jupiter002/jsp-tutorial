@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file = "include/header.jsp" %>
-<form action="delete-process2.jsp" method="post">
+<form action="delete-process.jsp" method="post">
     <div class="container-sm mt-5">
       <div class="row mt-5 justity-content-center ">
         <div class="col-6">

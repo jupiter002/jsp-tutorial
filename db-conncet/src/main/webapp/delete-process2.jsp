@@ -17,8 +17,6 @@ String pw = "1234";
 Connection conn = null;
 PreparedStatement pstmt = null;
 ResultSet rs = null;
-String dbUserId ="";
-String dbUserPw ="";
 
 String sql = "delete from member where id = ? and password = ?";		//db에 보낼 쿼리문
 																					// select이후에 컬러명을 적어줄것

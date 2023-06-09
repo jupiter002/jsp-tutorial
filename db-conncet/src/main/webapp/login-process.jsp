@@ -45,7 +45,7 @@
 		session.setAttribute("loggedUserId", userId);
 		session.setAttribute("loggedUserName", userName);
 		//request.getRequestDispatcher("login-ok.jsp").	forward(request, response);
-		RequestDispatcher dispatcher =  request.getRequestDispatcher("login-ok.jsp");			//
+		RequestDispatcher dispatcher =  request.getRequestDispatcher("asd.jsp");			//
 		dispatcher.forward(request, response);
 		
 	}else{

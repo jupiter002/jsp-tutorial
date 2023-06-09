@@ -17,13 +17,13 @@
 	PreparedStatement pstmt = null;
 	ResultSet rs = null;
 	String pLoggedUserId = (String)session.getAttribute("loggedUserId");
-	String sql = "select id,name,email,address,lpad(zonecode,5,'0') as zonecode,detailAddress,extraAddress  from member where id = ?";		//
+	String sql = "select id,name,email,address,lpad(zonecode,5,'0') as zonecode,detailAddress  from member where id = ?"+pLoggedUserId;		//
 	
 	Class.forName(driver);
 	conn = DriverManager.getConnection(url, id, pw);	//db에 연결
 	pstmt = conn.prepareStatement(sql);
-  	pstmt.setString(1,pLoggedUserId);
 	rs = pstmt.executeQuery();
+  	pstmt.setString(1,pLoggedUserId);
 	String address = null;
 	String detailAddress = null;
 	String zonecode = null;
@@ -32,12 +32,13 @@
 	String extraAddress = null; 
 	
 	if(rs.next()){
+		address = rs.getString("address");
 		detailAddress = rs.getString("detailAddress");
 		extraAddress = rs.getString("extraAddress");
 		zonecode = rs.getString("zonecode");
 		name = rs.getString("name");
 		email = rs.getString("email");
-		address = rs.getString("address");
+		
 	}
 
     %>
@@ -58,9 +59,8 @@
           />
         </div>
         <div class="mb-3">
-          <label for="floatingPassword">Password</label>
           <input type="password" name="userPw" class="form-control form-control-lg" id="floatingPassword" placeholder="Password" />
-          
+          <label for="floatingPassword">Password</label>
         </div>
         <div class="mb-3">
           <input
@@ -74,7 +74,6 @@
           <label for="floatingName">Name</label>
         </div>
         <div class="mb-3">
-        <label for="floatingEmail">email</label>
           <input
             type="text"
             name="userEmail"
@@ -84,17 +83,16 @@
             readonly
             value="<%= email %>"
           />
-          
+          <label for="floatingEmail">email</label>
         </div>
         <div class="form">
           <div class="input-group mb-3">
             <input type="text" class="form-control form-control-lg" name="zonecode" id="zonecode" placeholder="우편번호" readonly value= "<%= zonecode
-            %>" />
+            %>"" />
             <button class="btn btn-secondary" type="button" id="button-addon2" onclick="searchZonecode()">Button</button>
           </div>
         </div>
         <div class="mb-3">
-        <label for="floatingAddress">Address</label>
           <input
             type="text"
             name="userAddress"
@@ -104,7 +102,7 @@
             readonly
             value="<%= address %>"
           />
-          
+          <label for="floatingAddress">Address</label>
         </div>
         <div class="row mb-3">
           <div class="col">
