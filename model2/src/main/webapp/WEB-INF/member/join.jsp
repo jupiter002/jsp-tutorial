@@ -57,7 +57,7 @@
   const regEmail = "^[a-zA-Z0-9+-\_.]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$";
 
   const joinForm = document.forms.joinForm; //document아래 forms들 아래 joinForm
-  let isDoubleCheck = true;
+  let isDoubleCheck = false;
   btnSubmit.addEventListener("click", (e) => {
     if (userId.value === "") {
       //e.preventDefault();
@@ -108,23 +108,30 @@
   });
   btnIdCheck.addEventListener("click", () => {
     // console.log('idCheck.jsp?userId=${userId.value}')
-    fetch("idCheck.jsp?userId=" + userId.value)
+    fetch("../member/idCheck?userId=" + userId.value)
       .then((response) => {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
-        if (data.isOK) {
-          alert("쓸 수 있는 아이디입니다.");
-          isDoubleCheck = true;
-        } else {
-          alert("쓸 수 없는 아이디입니다.");
-          userId.value = "";
-          userId.focus();
-        }
+    	  
+    	  if (data.isOk) {
+              const result = confirm("쓸 수 있는 아이디입니다. 사용하시겠습니까?");
+              if (result) {
+                joinForm.elements.userId.setAttribute("readonly", true);
+                isDoubleCheck = true;
+              } else {
+                joinForm.elements.userId.value = "";
+                joinForm.elements.userId.focus();
+              }
+            } else {
+              alert("쓸 수 없는 아이디입니다.");
+              userId.value = "";
+              userId.focus();
+            }
       });
   });
 
+  
   function searchZonecode() {
     new daum.Postcode({
       oncomplete: function (data) {

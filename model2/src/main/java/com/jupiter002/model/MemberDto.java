@@ -1,5 +1,6 @@
 package com.jupiter002.model;
 
+
 public class MemberDto {		//경우에 따라서 dto는 여러개 만들어도 됨
 	private String id;
 	private String name;
@@ -97,7 +98,6 @@ public class MemberDto {		//경우에 따라서 dto는 여러개 만들어도 �
 				+ ", zonecode=" + zonecode + ", address=" + address + ", detailAddressl=" + detailAddressl
 				+ ", extraAddress=" + extraAddress + "]";
 	}
-	
-	
-	
 }
+
+	

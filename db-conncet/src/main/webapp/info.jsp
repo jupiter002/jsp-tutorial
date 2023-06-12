@@ -67,7 +67,7 @@
       </tr>
       <tr>
         <th scope="row">주소</th>
-        <td><%=address %></td>
+        <td><%=allAddress %></td>
       </tr>
       <tr>
         <th scope="row">우편번호</th>
