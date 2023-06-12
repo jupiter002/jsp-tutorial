@@ -29,7 +29,6 @@ public class LoginProcessController extends HttpServlet {
 		memberDto.setPassword(userPw);
 		MemberDto loggedMember = memberDao.loginMember(memberDto);
 		
-		memberDao.loginMember(memberDto);
 		HttpSession session = request.getSession();
 		if(loggedMember!=null) {
 			session.setAttribute("loggedMemberId",loggedMember.getId());
