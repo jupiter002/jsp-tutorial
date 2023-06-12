@@ -6,7 +6,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
+import com.juipter002.utils.ScriptWriter;
 import com.jupiter002.model.MemberDao;
 import com.jupiter002.model.MemberDto;
 
@@ -25,10 +27,17 @@ public class LoginProcessController extends HttpServlet {
 		String userPw = request.getParameter("userPw");
 		memberDto.setId(userId);
 		memberDto.setPassword(userPw);
-		
-		memberDao.loginMember(memberDto);
-		
 		MemberDto loggedMember = memberDao.loginMember(memberDto);
+		
+		HttpSession session = request.getSession();
+		if(loggedMember!=null) {
+			session.setAttribute("loggedMemberId",loggedMember.getId());
+			session.setAttribute("loggedMemberName",loggedMember.getName());
+			session.setAttribute("loggedMember", loggedMember);
+			ScriptWriter.alertAndNext(response,loggedMember.getName()+"님 안녕하세요", "../index/index");
+		}else {
+			ScriptWriter.alertAndBack(response, "알 수 없는 오류가 발생했습니다. 잠시 후 다시 시도해 주세요");
+		}
 		System.out.println(loggedMember.toString());
 	
 	}

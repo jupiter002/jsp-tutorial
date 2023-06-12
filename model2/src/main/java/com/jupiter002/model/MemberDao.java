@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+
 public class MemberDao {
 	private String driver = "oracle.jdbc.OracleDriver";
 	private String url = "jdbc:oracle:thin:@localhost:1521:xe";
@@ -24,7 +25,7 @@ public class MemberDao {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
+	}	
 	private void close() {
 			try {
 				if(rs!=null)rs.close();
@@ -71,8 +72,12 @@ public class MemberDao {
 				loggedmemberDto = new MemberDto();
 				String userId = rs.getString("id");
 				String userName = rs.getString("name");
+				String userEmail = rs.getString("email");
+				String userAddress = rs.getString("address");
 				loggedmemberDto.setId(userId);
 				loggedmemberDto.setName(userName);
+				loggedmemberDto.setEmaill(userEmail);
+				loggedmemberDto.setAddress(userAddress);
 				
 			}
 		} catch (SQLException e) {
@@ -83,5 +88,60 @@ public class MemberDao {
 		
 		return loggedmemberDto;
 	}
-
+	public MemberDto infoMember(MemberDto memberDto) {
+		MemberDto infoMemberDto = null;
+		getConnection();
+		String sql = "select member id,name,email,address,lpad(zonecode 5,'0') as zonecode detailaddress where id = ?"; //쿼리문 작성
+		try {
+			pstmt = conn.prepareStatement(sql);			//쿼리문 날림
+			pstmt.setString(1, memberDto.getId());		//
+			pstmt.setString(2, memberDto.getName());
+			pstmt.setString(3, memberDto.getEmaill());
+			pstmt.setString(4, memberDto.getAddress());
+			pstmt.setInt(5, memberDto.getZonecode());
+			pstmt.setString(6, memberDto.getDetailAddressl());
+			rs = pstmt.executeQuery();
+			if(rs.next()) {
+				 infoMemberDto = new MemberDto();
+				 String UserId = rs.getString("id");
+				 String UserName = rs.getString("name");
+				 String UserEmail = rs.getString("email");
+				 String UserAddress = rs.getString("address");
+				 String Zonecode = rs.getString("zonecode");
+				 String DetailAddress = rs.getString("detailaddress");
+				 String AllAddress = UserAddress+ " / " +DetailAddress;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			close();
+		}
+	return infoMemberDto;
+	}
+	
+	
+	
+	
+	
+	public int idCheck(String userId) {
+		int result = 0;
+		getConnection();
+		String sql = "select count(*) as count from member where id = ?";			//쿼리문의 count 명령어는 컬럼의 개수를 값으로 반환함
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1,userId);
+			rs = pstmt.executeQuery();												//count명령어는 excuteQuery명령어로 값을 가져옴
+			if(rs.next()) {															//next()메소드는 다음 값이 있으면 true를 반환함
+				result = rs.getInt("count");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			close();
+		}
+		return result;
+		
+		
+	}
+	
 }
