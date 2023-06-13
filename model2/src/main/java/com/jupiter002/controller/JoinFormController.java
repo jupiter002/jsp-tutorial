@@ -24,3 +24,4 @@ public class JoinFormController extends HttpServlet {
 	}
 
 }
+	

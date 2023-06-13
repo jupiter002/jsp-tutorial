@@ -4,13 +4,15 @@
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
-    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
-    <fullyQualifiedTypeName name="com.juipter002.utils.ScriptWriter"/>
-    <fullyQualifiedTypeName name="com.jupiter002.model.MemberDao"/>
-    <fullyQualifiedTypeName name="com.jupiter002.model.MemberDto"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="javax.websocket.Session"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="com.jupiter002.model.PasswordDto"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="com.juipter002.utils.ScriptWriter"/>
+    <fullyQualifiedTypeName name="com.jupiter002.model.MemberDao"/>
+    <fullyQualifiedTypeName name="com.jupiter002.model.MemberDto"/>
 </qualifiedTypeNameHistroy>

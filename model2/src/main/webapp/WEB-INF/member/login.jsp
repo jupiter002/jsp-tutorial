@@ -16,7 +16,8 @@
           </div>
         </div>
         <div class="text-center mt-5"><button type="submit" class="btn btn-primary">로그인</button></div>
-      </div>
+      </div>	
     </div>
   </form>
 <%@ include file = "../include/footer.jsp" %>
+
