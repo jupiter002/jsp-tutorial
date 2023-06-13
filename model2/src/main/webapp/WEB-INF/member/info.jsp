@@ -2,20 +2,21 @@
 <%@ include file = "../include/header.jsp"%>
 
 <div class="container-sm mt-5">
+<h1>${getinfoId}</h1>
   <table class="table">
     <tbody>
       <tr>
       <th scope="row">ID</th>
-        <td>${ loggedMember.id }</td>
+        <td>${ getinfoId }</td>
       </tr>
       <tr>
       <tr>
         <th scope="row">Name</th>
-        <td>${ loggedMember.name }</td>
+        <td>${ getinfo.name }</td>
       </tr>
       <tr>
       <th scope="row">email</th>
-        <td></td>
+        <td>${ getinfo.email }</td>
       </tr>
       <tr>
         <th scope="row">주소</th>
@@ -23,7 +24,7 @@
       </tr>
       <tr>
         <th scope="row">우편번호</th>
-        <td>${ loggedMember.zonecode}</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

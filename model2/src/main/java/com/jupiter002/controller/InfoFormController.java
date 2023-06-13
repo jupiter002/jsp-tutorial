@@ -34,14 +34,13 @@ public class InfoFormController extends HttpServlet {
 		MemberDto getinfo = memberDao.infoMember(memberDto);
 		
 		HttpSession session = request.getSession();
-		if(getinfo != null) {
-			session.setAttribute("getinfoID",getinfo.getId());
-			session.setAttribute("getinfoName",getinfo.getName());
+			session.setAttribute("getinfoID", getinfo.getId());
 			session.setAttribute("getinfo", getinfo);
-		}
 		
 	
 	}
+	
+
 	
 
 }
