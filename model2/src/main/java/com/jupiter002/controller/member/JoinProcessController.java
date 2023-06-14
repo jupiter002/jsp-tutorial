@@ -1,15 +1,16 @@
 package com.jupiter002.controller.member;
 
-import java.io.IOException; 
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;  
+ 
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
-import com.juipter002.utils.ScriptWriter;
 import com.jupiter002.model.MemberDao;
 import com.jupiter002.model.MemberDto;
+import com.jupiter002.utils.ScriptWriter;
 
 @WebServlet("/member/joinProcess")
 public class JoinProcessController extends HttpServlet {

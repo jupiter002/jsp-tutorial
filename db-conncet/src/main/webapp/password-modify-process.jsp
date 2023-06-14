@@ -1,4 +1,4 @@
-<%@page import="com.juipter002.utils.ScriptWriter"%>
+<%@page import="com.jupiter002.utils.ScriptWriter"%>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.PreparedStatement"%>

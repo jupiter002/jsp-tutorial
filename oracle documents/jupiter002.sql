@@ -37,15 +37,18 @@ update member set password = '1234' where id 'jupiter002' and password = '12';
 
 //자동증가 auto increament my sql
 create table board(
-    id      number primary key,
-    name    varchar2(100) not null,
-    title   varchar2(300) not null,
-    contents   varchar2(3000) not null,
-    regdate date default sysdate,
-    hit     number
-
+    id          number primary key,     --글의 고유번호
+    userId      varchar2(100),          --member id를 통한 조회
+    name        varchar2(100) not null, -- 게시판에서의 이름
+    title       varchar2(300) not null,
+    contents    varchar2(3000) not null,
+    regdate     date default sysdate,
+    hit         number,
+    constraint  fk_userid foreign key(userId) references member (id)        --costraint: 제약
+    --  constraint  사용자지정 이름 foreign key(현재테이블의 컬럼명) references member (외부에서 가져올 컬럼명)
 );
-insert into board values (seq_board.nextval,'김지훈','제목을 씁니다','내용이 들어갑니다.',sysdate,0);
+drop table board;
+insert into board values (seq_board.nextval,'qw','흐엉','제목입니다','내용입니다',sysdate,0);
 rollback;
 select * from board;
 
