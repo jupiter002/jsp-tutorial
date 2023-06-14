@@ -11,7 +11,6 @@
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
     <fullyQualifiedTypeName name="com.jupiter002.model.PasswordDto"/>
     <fullyQualifiedTypeName name="com.juipter002.utils.ScriptWriter"/>
-    <fullyQualifiedTypeName name="com.jupiter002.model.MemberDao"/>
     <fullyQualifiedTypeName name="com.jupiter002.model.MemberDto"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
     <fullyQualifiedTypeName name="javax.servlet.ServletException"/>
@@ -25,5 +24,8 @@
     <fullyQualifiedTypeName name="jakarta.servlet.RequestDispatcher"/>
     <fullyQualifiedTypeName name="jakarta.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServletResponseWrapper"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.HttpConstraintElement"/>
     <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServletResponse"/>
+    <fullyQualifiedTypeName name="com.jupiter002.model.MemberDao"/>
 </qualifiedTypeNameHistroy>
