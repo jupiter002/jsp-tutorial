@@ -1,4 +1,4 @@
-package com.jupiter002.controller;
+package com.jupiter002.controller.member;
 
 import java.io.IOException; 
 import javax.servlet.ServletException;

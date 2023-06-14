@@ -1,9 +1,13 @@
 package com.juipter002.utils;
 
-import java.io.IOException;
+import java.io.IOException; 
 import java.io.PrintWriter;
 
 import javax.servlet.http.HttpServletResponse;
+
+
+
+
 
 public class ScriptWriter {
 	public static void alert(HttpServletResponse response,String alertMsg) throws IOException {
