@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/jupiter002/jsp-tutorial.git"/>
 		<item value="jik7194%40naver.com@github.com:jupiter002/jsp-tutorial.git"/>
 		<item value="jupiter002@github.com:jupiter002/jsp-tutorial.git"/>
 		<item value="juipter002@github.com:jupiter002/jsp-tutorial.git"/>
@@ -10,6 +11,11 @@
 	</list>
 	<list key="CommitDialog.committerValues">
 		<item value="jupiter002 &lt;jik7194@naver.com&gt;"/>
+	</list>
+	<list key="EGit.KnownHosts">
+		<item value="bitbucket.org"/>
+		<item value="git.eclipse.org"/>
+		<item value="github.com"/>
 	</list>
 	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="635"/>
@@ -24,7 +30,7 @@
 	</section>
 	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
 		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="false"/>
-		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="499,501"/>
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
 		<item key="STAGING_SASH_FORM_WEIGHT" value="500,500"/>
 		<item key="sortItemState" value="false"/>
 	</section>
