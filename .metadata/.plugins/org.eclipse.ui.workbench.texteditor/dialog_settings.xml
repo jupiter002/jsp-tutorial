@@ -8,6 +8,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="w"/>
 			<item value="8080"/>
 			<item value="path"/>
 			<item value="c:"/>
@@ -22,7 +23,6 @@
 			<item value="requestuserId"/>
 			<item value="driver"/>
 			<item value="+ &quot;&lt;label&gt;&lt;span&gt;1단&lt;/span&gt;&lt;input type=&apos;checkbox&apos; name=&apos;dan&apos;value=&apos;1&apos;&gt;&lt;/label&gt;&quot;"/>
-			<item value="&quot;"/>
 		</list>
 		<list key="replacehistory">
 			<item value="driver"/>
