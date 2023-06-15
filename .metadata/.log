@@ -3768,3 +3768,6 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.wst.server.core 4 0 2023-06-15 14:20:58.176
 !MESSAGE Server Apache Tomcat v10.1 (2) at localhost failed to start.
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-06-15 18:00:28.707
+!MESSAGE Can't connect to any repository: 
