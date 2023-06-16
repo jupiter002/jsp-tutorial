@@ -49,23 +49,13 @@ create table board(
 );
 drop table board;
 
-DECLARE
-NUM1 NUMBER :=1;
-
-BEGIN
-    LOOP
-    INSERT INTO board VALUES (seq_board.nextval,'qw','흐엉','제목입니다','내용입니다',sysdate,0);
-    NUM1 := NUM1+1; --NUM = NUM +1
-    EXIT WHEN NUM1 >10; --NUM1이 10보다 크면 LOOP종료
-    END LOOP;
-END;
 
 insert into board values (seq_board.nextval,'qw','흐엉','제목입니다','내용입니다',sysdate,0);
 
 
 
 rollback;
-select * from board where id;
+select * from board;
 
 update board set hit =hit+1; where id = 14;
 
