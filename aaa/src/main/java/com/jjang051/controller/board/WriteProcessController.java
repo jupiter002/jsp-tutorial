@@ -32,12 +32,15 @@ public class WriteProcessController extends HttpServlet {
 		boardDto.setTitle(title);
 		boardDto.setContents(contents);
 		BoardDao boardDao = new BoardDao();
+		
+		
 		int result = boardDao.writeBoard(boardDto);
 		if(result>0) {
 			response.sendRedirect("../board/list");
 		} else {
 			ScriptWriter.alertAndBack(response, "알 수 없는 오류로 글이 입력되지 않았습니다. 다시 시도해 주세요");
 		}
+		
 	}
 }
 

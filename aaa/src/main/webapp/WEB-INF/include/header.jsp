@@ -28,8 +28,6 @@
 				jjang051 </a>
 			<ul class="nav nav-pills">
 				
-				
-				
 				<c:choose>
 					<c:when test="${loggedMember eq null }">
 						<li class="nav-item"><a href="../member/login" class="nav-link">login</a></li>

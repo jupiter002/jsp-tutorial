@@ -41,7 +41,7 @@ create table board(
     userId      varchar2(100),          --member id를 통한 조회
     name        varchar2(100) not null, -- 게시판에서의 이름
     title       varchar2(300) not null,
-    contents    varchar2(3000) not null,
+    contents    clob not null,
     regdate     date default sysdate,
     hit         number,
     constraint  fk_userid foreign key(userId) references member (id)        --costraint: 제약
@@ -64,5 +64,12 @@ select * from board id desc where id > 90 and id < 105;
 
 --서브쿼리
 select * from
-    (select rownum as no,b.* from
-        (select * from board order by id desc) b) where no >= and no <= 10;     -- (~~테이블 생성) -- order by 정렬 명령어, desc 내림차순 정렬
+    (select rownum as no,b.* from       --rownum: 순서를 정할때 쓰는 임의의 컬럼명
+        (select * from board order by id desc) b) where no >= 1 and no <= 10;     -- (~~테이블 생성) -- order by 정렬 명령어, desc 내림차순 정렬
+        
+--select * from
+    --(select rownum as no,b.* from      rownum과 b테이블의 모든것을 가져온다
+        --(select * from board order by id desc) b) where no >= and no <= 10;     b는 앞에 select문의 테이블명
+        
+        
+alter table board modify contents long --character large object, blob: binary large object

@@ -29,18 +29,8 @@ public class ListController extends HttpServlet {
 		BoardDao boardDao = new BoardDao();
 		String StrStart = request.getParameter("start");
 		String StrEnd = request.getParameter("end");
-		System.out.println(StrStart);
-		System.out.println(StrEnd);
-		double pagePerList = 10;		// 한번에 보여줄 게시글 수
-		double total = boardDao.getTotal();	//전체 페이지 갯수
-		int pageBlock = 3; // 아래쪽 pagination에 한번에 보여지는 갯수
 		int clickPage = 0;
 		String tempClickPage = request.getParameter("clickPage");
-		
-		int pageTotal = (int)(Math.ceil(total / pagePerList));				//아래쪽 페이지 출력 갯수
-		System.out.println("pageTotal==="+pageTotal);
-		int pageStart = (int)((clickPage-1)/pageBlock)*pageBlock+1;			//clickPage가1~4까지일떄는 int가 소수점을 탈락시키기떄문에 pageBlock을 곱해도 0으로 계산되고 +1하면 결과로 1이 나온다
-		int pageEnd = pageStart+pageBlock-1;	
 		
 		
 		if(tempClickPage==null) {
@@ -48,6 +38,17 @@ public class ListController extends HttpServlet {
 		}else {
 			clickPage = Integer.parseInt(tempClickPage);
 		}
+		
+		double pagePerList = 10;						// 한번에 보여줄 게시글 수
+		
+		double total = boardDao.getTotal();				//전체 페이지 갯수
+		int pageBlock = 8; 								// 아래쪽 pagination에 한번에 보여지는 갯수
+		
+		
+		int pageTotal = (int)(Math.ceil(total / pagePerList));				//아래쪽 페이지 출력 갯수
+		int pageStart = (int)((clickPage-1)/pageBlock)*pageBlock+1;			//clickPage가1~4까지일떄는 int가 소수점을 탈락시키기떄문에 pageBlock을 곱해도 0으로 계산되고 +1하면 결과로 1이 나온다
+		int pageEnd = pageStart+pageBlock-1;	
+		if(pageEnd==pageTotal)pageEnd = pageTotal;
 		
 		
 //		int start =StrStart==null ? 1 : Integer.parseInt(StrStart);
@@ -59,7 +60,6 @@ public class ListController extends HttpServlet {
 		PageDto pageDto = new PageDto();
 		pageDto.setPageTotal(pageTotal);
 		pageDto.setTotal((int)total);
-		pageDto.setPageEnd(pageEnd);
 		pageDto.setPageBlock(pageBlock);
 		pageDto.setPageStart(pageStart);
 		pageDto.setPageEnd(pageEnd);

@@ -2,7 +2,7 @@ package com.jjang051.model;
 
 public class PageDto {
 	private int pageTotal;
-	private int total;
+	private double total;
 	private double pagePerList;
 	private int pageBlock;
 	private int clickPage;
@@ -15,7 +15,7 @@ public class PageDto {
 	}
 
 
-	public PageDto(int pageTotal, int total, double pagePerList, int pageBlock, int clickPage, int pageStart,
+	public PageDto(int pageTotal, double total, double pagePerList, int pageBlock, int clickPage, int pageStart,
 			int pageEnd) {
 		super();
 		this.pageTotal = pageTotal;
@@ -39,7 +39,7 @@ public class PageDto {
 
 
 	public int getTotal() {
-		return total;
+		return (int)total;
 	}
 
 
@@ -48,8 +48,8 @@ public class PageDto {
 	}
 
 
-	public double getPagePerList() {
-		return pagePerList;
+	public int getPagePerList() {
+		return (int)pagePerList;
 	}
 
 
