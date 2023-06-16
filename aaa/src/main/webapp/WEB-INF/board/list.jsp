@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ include file="../include/header.jsp"%>
-<h1>${loggedMember}</h1>
 <div class="container-sm mt-5">
 	<table class="table">
 		<colgroup>
@@ -21,38 +20,42 @@
 			</tr>
 		</thead>
 		<tbody>
-			<c:forEach items = "${boardList}" var = "boardDto">
+			<c:forEach items = "${boardList}" var = "boardDto" varStatus="status">
 			<tr>
-				<td>${boardDto.id }</td>
+				<td>${pageDto.total - pageDto.pagePerList*(clickPage-1) - status.index}</td>
 				<!-- query paramamter  get -->
 				<td><a href="../board/view?id=${boardDto.id}">${boardDto.title }</a></td>
 				<td>${boardDto.name }</td>
 				<td>${boardDto.regDate }</td>
-				<td>${boardDto.hit }</td>
+				<td>${boardDto.hit }<span>${clickPage }</span></td>
 			</tr>
 			</c:forEach>
 		</tbody>
 	</table>
 	
-	<nav aria-label="Page navigation example">
+	<nav aria-label="Page navigation example justify-content-center">
   <ul class="pagination">
+  <c:if test="${pageDto.pageStart ne 1 }">
     <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">
+      <a class="page-link" href="../board/list?clickPage=${pageDto.pageStart-pageDto.pageBlock }" aria-label="Previous">
         <span aria-hidden="true">&laquo;</span>
       </a>
     </li>
+    </c:if>
     
-    
-    
-    <c:forEach begin="1" end="${pagePerList }" step="1" var="page" varStatus="status">
-    	<li class="page-item ${page == param.clickPage?'active':''}">
-    	<a class="page-link" href="../board/list?start=${(page-1)*10+1}&end=${page*10}&clickPage=${page}">${page}</a></li>
+    <c:forEach begin="${pageDto.pageStart }" end="${pageDto.pageEnd }" step="1" var="page" varStatus="status">
+    	<li class="page-item ${page == clickPage?'active':''}">
+    	<a class="page-link" href="../board/list?clickPage=${page}">${page}</a></li>
+    	<%-- <a class="page-link" href="../board/list?start=${(page-1)*pagePerList+1}&end=${pagePerList}&clickPage=${page}">${page}</a></li> --%>
     </c:forEach>
+    <c:if test="${pageDto.pageEnd ne pageDto.total }">
     <li class="page-item">
-      <a class="page-link" href="#" aria-label="Next">
+      <a class="page-link" href="../board/list?clickPage=${pageDto.pageStart+pageDto.pageBlock }" aria-label="Next">
         <span aria-hidden="true">&raquo;</span>
       </a>
     </li>
+    </c:if>
+    
     
   </ul>
 </nav>

@@ -64,5 +64,5 @@ select * from board id desc where id > 90 and id < 105;
 
 --서브쿼리
 select * from
-    (select rownum, as no, b.* from
+    (select rownum as no,b.* from
         (select * from board order by id desc) b) where no >= and no <= 10;     -- (~~테이블 생성) -- order by 정렬 명령어, desc 내림차순 정렬
