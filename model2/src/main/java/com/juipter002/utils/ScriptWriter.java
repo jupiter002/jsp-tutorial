@@ -9,16 +9,18 @@ public class ScriptWriter {
 	public static void alert(HttpServletResponse response,String alertMsg) throws IOException {
 		response.setContentType("text/html;charset = utf-8");
 		PrintWriter out = response.getWriter();
-		out.println("<script> alert('"+alertMsg+"') </script>");
+		out.println("<script>alert('"+alertMsg+"');</script>");
 	}
 	public static void alertAndBack(HttpServletResponse response,String alertMsg) throws IOException {
 		response.setContentType("text/html;charset = utf-8");
 		PrintWriter out = response.getWriter();
-		out.println("<script> alert('"+alertMsg+"'); history.back(); </script>");
+		out.println("<script>alert('"+alertMsg+"');history.back();</script>");
 	}
-	public static void alertAndNext(HttpServletResponse response,String alertMsg, String next) throws IOException {
+	public static void alertAndNext(HttpServletResponse response,String alertMsg,String next) throws IOException {
 		response.setContentType("text/html;charset = utf-8");
 		PrintWriter out = response.getWriter();
-		out.println("<script> alert('"+alertMsg+"'); location.href='"+next+"'; </script>");
+		out.println("<script>alert('"+alertMsg+"');location.href='"+next+"';</script>");
 	}
 }
+
+

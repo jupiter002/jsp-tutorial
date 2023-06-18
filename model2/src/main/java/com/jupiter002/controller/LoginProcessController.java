@@ -27,7 +27,13 @@ public class LoginProcessController extends HttpServlet {
 //		String userPw = request.getParameter("userPw");
 //		memberDto.setId(userId);
 //		memberDto.setPassword(userPw);
+		
+		String userId = request.getParameter("userId");
+		String userPw = request.getParameter("userPw");
+		memberDto.setId(userId);
+		memberDto.setPassword(userPw);
 		MemberDto loggedMember = memberDao.loginMember(memberDto);
+		
 		
 		HttpSession session = request.getSession();
 		if(loggedMember!=null) {
@@ -39,6 +45,7 @@ public class LoginProcessController extends HttpServlet {
 			ScriptWriter.alertAndBack(response, "알 수 없는 오류가 발생했습니다. 잠시 후 다시 시도해 주세요");
 		}
 		System.out.println(loggedMember.toString());
+		//System.out.println(loggedMember.toString());
 	
 	}
 

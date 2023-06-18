@@ -1,6 +1,6 @@
 package com.jupiter002.model;
 
-import java.sql.Connection;
+import java.sql.Connection; 
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -74,10 +74,12 @@ public class MemberDao {
 				String userName = rs.getString("name");
 				String userEmail = rs.getString("email");
 				String userAddress = rs.getString("address");
+				int Zonecode = rs.getInt("zonecode");
 				loggedmemberDto.setId(userId);
 				loggedmemberDto.setName(userName);
 				loggedmemberDto.setEmaill(userEmail);
 				loggedmemberDto.setAddress(userAddress);
+				loggedmemberDto.setZonecode(Zonecode);
 				
 			}
 		} catch (SQLException e) {
@@ -91,25 +93,21 @@ public class MemberDao {
 	public MemberDto infoMember(MemberDto memberDto) {
 		MemberDto infoMemberDto = null;
 		getConnection();
-		String sql = "select member id,name,email,address,lpad(zonecode 5,'0') as zonecode detailaddress where id = ?"; //쿼리문 작성
+
+		String sql = "select id,name,email,address,lpad(zonecode 5,'0') as zonecode detailaddress extraaddress from member where id = ?"; //쿼리문 작성
 		try {
 			pstmt = conn.prepareStatement(sql);			//쿼리문 날림
 			pstmt.setString(1, memberDto.getId());		//
-			pstmt.setString(2, memberDto.getName());
-			pstmt.setString(3, memberDto.getEmaill());
-			pstmt.setString(4, memberDto.getAddress());
-			pstmt.setInt(5, memberDto.getZonecode());
-			pstmt.setString(6, memberDto.getDetailAddressl());
 			rs = pstmt.executeQuery();
 			if(rs.next()) {
 				 infoMemberDto = new MemberDto();
-				 String UserId = rs.getString("id");
-				 String UserName = rs.getString("name");
-				 String UserEmail = rs.getString("email");
-				 String UserAddress = rs.getString("address");
-				 String Zonecode = rs.getString("zonecode");
-				 String DetailAddress = rs.getString("detailaddress");
-				 String AllAddress = UserAddress+ " / " +DetailAddress;
+				infoMemberDto.setId(rs.getString("id"));
+				infoMemberDto.setName(rs.getString("name"));
+				infoMemberDto.setEmaill(rs.getString("email"));
+				infoMemberDto.setZonecode(rs.getInt("zonecode"));
+				infoMemberDto.setAddress(rs.getString("address"));
+				infoMemberDto.setDetailAddressl(rs.getString("detailaddress"));
+				infoMemberDto.setExtraAddress(rs.getString("extraaddress"));
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -120,6 +118,52 @@ public class MemberDao {
 	}
 	
 	
+	
+	public int modifyMember(MemberDto memberDto) {
+		int result = 0;
+		getConnection();
+		String sql = "update memeber set name = ?, email = ?, zonecode = ?, address = ?, detailaddress = ?, extraaddress = ?"
+						+"where id = ? and password = ?";
+		
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, memberDto.getName());		//쿼리문이랑 순서 맞춤
+			pstmt.setString(2, memberDto.getEmaill());
+			pstmt.setInt(3, memberDto.getZonecode());
+			pstmt.setString(4, memberDto.getAddress());
+			pstmt.setString(5, memberDto.getDetailAddressl());
+			pstmt.setString(6, memberDto.getExtraAddress());
+			pstmt.setString(7, memberDto.getId());
+			pstmt.setString(8, memberDto.getPassword());
+			result = pstmt.executeUpdate();			//executeUpdate는 int값 
+				
+			}
+		 catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			close();
+		}
+		
+		return result;
+	}
+	
+	
+	public int modifyPassword(PasswordDto passwordDto) {
+		int result = 0;
+		getConnection();
+		String sql = "update member set password = ? where userId = ? password = ?";
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, passwordDto.getNewUserPw());
+			pstmt.setString(2, passwordDto.getUserId());
+			pstmt.setString(3, passwordDto.getUserPw());
+			pstmt.executeUpdate();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
 	
 	
 	
@@ -142,6 +186,8 @@ public class MemberDao {
 		return result;
 		
 		
-	}
+	
 	
 }
+	}	
+	

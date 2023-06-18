@@ -27,7 +27,11 @@
       	</c:when>
       	<c:otherwise>
       	<li class="nav-item"><a href="../member/logout" class="nav-link">logout</a></li>
+<<<<<<< HEAD
         <li class="nav-item"><a href="../member/info?userId=${loggedUserID}" class="nav-link">${loggedMember.name}</a></li>
+=======
+        <li class="nav-item"><a href="../member/info?userId=${ loggedMember.id }" class="nav-link">${loggedMember.name}</a></li>
+>>>>>>> 09cf2c4d8afa88da082e2a2cecaea8ee37828a1a
       	</c:otherwise>
       </c:choose>
     <%--   <c:if test="${empty loggedMember}">		<!-- jstl if문 -->

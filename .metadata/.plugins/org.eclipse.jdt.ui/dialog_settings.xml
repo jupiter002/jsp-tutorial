@@ -78,7 +78,11 @@
 		<item key="expanded8" value="false"/>
 	</section>
 	<section name="BuildPathsPropertyPage">
+<<<<<<< HEAD
 		<item key="pageIndex" value="3"/>
+=======
+		<item key="pageIndex" value="2"/>
+>>>>>>> 09cf2c4d8afa88da082e2a2cecaea8ee37828a1a
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.typehierarchy.QuickHierarchy">
 		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_WIDTH" value="450"/>
@@ -86,4 +90,10 @@
 		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_SIZE" value="true"/>
 		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_LOCATION" value="false"/>
 	</section>
+<<<<<<< HEAD
+=======
+	<section name="ClasspathContainerSelectionPage">
+		<item key="index" value="9"/>
+	</section>
+>>>>>>> 09cf2c4d8afa88da082e2a2cecaea8ee37828a1a
 </section>

@@ -1,10 +1,6 @@
 package com.jupiter002.controller;
 
-import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.io.IOException; 
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -36,6 +32,9 @@ public class InfoFormController extends HttpServlet {
 		HttpSession session = request.getSession();
 			session.setAttribute("getinfoID", getinfo.getId());
 			session.setAttribute("getinfo", getinfo);
+		
+		
+		
 		
 	
 	}

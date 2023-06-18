@@ -119,54 +119,5 @@
   </div>
 </form>
 
-<script>
-   const userId = document.querySelector(".userId");
-  const btnIdCheck = document.querySelector("#btnIdCheck");
-  const btnSubmit = document.querySelector("#btnSubmit");
-  const regEmail = /^[a-zA-Z0-9+-\_.]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
 
-  const joinForm = document.forms.joinForm; //document아래 forms들 아래 joinForm
-  let isDoubleCheck = false;
-  btnSubmit.addEventListener("click", (e) => {
-    if (userId.value === "") {
-      //e.preventDefault();
-      alert("아이디를 입력하세요.");
-      joinForm.elements.userId.value = "";
-      joinForm.elements.userId.focus();
-      //return false;
-    } else if (joinForm.elements.userPw.value.trim() == 0) {
-      e.preventDefault();
-      alert("비밀번호를 입력하세요.");
-      joinForm.elements.userPw.value = "";
-      joinForm.elements.userPw.focus();
-    } else if (joinForm.elements.userPw.value !== joinForm.elements.userPw02.value) {
-      e.preventDefault();
-      alert("비밀번호가 맞지 않습니다");
-      joinForm.elements.userPw02.value = "";
-      joinForm.elements.userPw02.focus();
-    } else if (joinForm.elements.userName.value.trim() === "") {
-      e.preventDefault();
-      alert("이름을 입력하세요.");
-      joinForm.elements.userName.value = "";
-      joinForm.elements.userName.focus();
-    } else if (joinForm.elements.userEmail.value.trim() === "") {
-      e.preventDefault();
-      alert("이메일을 입력하세요.");
-      joinForm.elements.userEmail.value = "";
-      joinForm.elements.userEmail.focus();
-    } else if (joinForm.elements.userEmail.value.trim().match(regEmail) === null) {
-      e.preventDefault();
-      alert("이메일을 형식에 맞게 입력하세요.");
-    } else if (joinForm.elements.zonecode.value.trim() === "") {
-      e.preventDefault();
-      alert("우편번호 입력하세요.");
-      joinForm.elements.zonecode.value = "";
-      joinForm.elements.zonecode.focus();
-    } else if (joinForm.elements.address.value.trim() === "") {
-      e.preventDefault();
-      alert("주소를 입력하세요.");
-      joinForm.elements.us.value = "";
-      joinForm.elements.userPw.focus();
-    }
-</script>
 <%@ include file ="include/footer.jsp" %>
