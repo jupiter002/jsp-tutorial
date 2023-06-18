@@ -13,11 +13,17 @@
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<item value="fetch"/>
 			<item value="8082"/>
 			<item value="8080"/>
 =======
+=======
+			<item value="w"/>
+>>>>>>> c46af6348bb6fa42ca049d5563821a3de77f373b
 			<item value="8080"/>
+			<item value="path"/>
+			<item value="c:"/>
 			<item value="fetch"/>
 			<item value="8082"/>
 >>>>>>> 09cf2c4d8afa88da082e2a2cecaea8ee37828a1a
@@ -30,8 +36,6 @@
 			<item value="requestuserId"/>
 			<item value="driver"/>
 			<item value="+ &quot;&lt;label&gt;&lt;span&gt;1단&lt;/span&gt;&lt;input type=&apos;checkbox&apos; name=&apos;dan&apos;value=&apos;1&apos;&gt;&lt;/label&gt;&quot;"/>
-			<item value="&quot;"/>
-			<item value="+ &quot;"/>
 		</list>
 		<list key="replacehistory">
 			<item value="driver"/>

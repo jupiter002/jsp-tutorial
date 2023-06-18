@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
 <<<<<<< HEAD
@@ -20,9 +19,29 @@
 =======
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
     <fullyQualifiedTypeName name="com.jupiter002.model.PasswordDto"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="com.juipter002.utils.ScriptWriter"/>
-    <fullyQualifiedTypeName name="com.jupiter002.model.MemberDao"/>
     <fullyQualifiedTypeName name="com.jupiter002.model.MemberDto"/>
+<<<<<<< HEAD
 >>>>>>> 09cf2c4d8afa88da082e2a2cecaea8ee37828a1a
+=======
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="javax.servlet.ServletException"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServletResponseWrapper"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.HttpConstraintElement"/>
+    <fullyQualifiedTypeName name="com.jupiter002.model.MemberDao"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicScrollPaneUI"/>
+    <fullyQualifiedTypeName name="com.jupiter002.utils.ScriptWriter"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.annotation.WebServlet"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServletResponse"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.ServletException"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="com.jupiter002.model.BoardDao"/>
+>>>>>>> c46af6348bb6fa42ca049d5563821a3de77f373b
 </qualifiedTypeNameHistroy>
