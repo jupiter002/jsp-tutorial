@@ -1,20 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+<<<<<<< HEAD
 		<item key="selection" value=""/>
+=======
+<<<<<<< HEAD
+		<item key="selection" value="fetch"/>
+=======
+		<item key="selection" value="8080"/>
+>>>>>>> 09cf2c4d8afa88da082e2a2cecaea8ee37828a1a
+>>>>>>> ba052d2d55632a655d914b02367b7cbadc894e0d
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 			<item value="metadata"/>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+			<item value="fetch"/>
+			<item value="8082"/>
+			<item value="8080"/>
+=======
+=======
+>>>>>>> ba052d2d55632a655d914b02367b7cbadc894e0d
 			<item value="w"/>
+>>>>>>> c46af6348bb6fa42ca049d5563821a3de77f373b
 			<item value="8080"/>
 			<item value="path"/>
 			<item value="c:"/>
 			<item value="fetch"/>
 			<item value="8082"/>
+>>>>>>> 09cf2c4d8afa88da082e2a2cecaea8ee37828a1a
 			<item value="isOK"/>
 			<item value="is"/>
 			<item value="DoubleCheck"/>

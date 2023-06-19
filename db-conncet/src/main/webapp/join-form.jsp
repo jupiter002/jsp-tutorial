@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
- <%@ include file = "include/header.jsp" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> <%@ include file = "include/header.jsp" %>
 
 <form action="join-process.jsp" method="post" class="join" name="joinForm">
   <div class="container-sm mt-5">
@@ -60,7 +59,7 @@
   let isDoubleCheck = false;
   btnSubmit.addEventListener("click", (e) => {
     if (userId.value === "") {
-      //e.preventDefault();
+      e.preventDefault();
       alert("아이디를 입력하세요.");
       joinForm.elements.userId.value = "";
       joinForm.elements.userId.focus();
@@ -177,4 +176,5 @@
   // const testEmail = "jang22@nanmail.net";
   // console.log(testEmail.match(regEmail));
 </script>
+
 <%@ include file = "include/footer.jsp" %>

@@ -42,13 +42,16 @@ public class ListController extends HttpServlet {
 		double pagePerList = 10;						// 한번에 보여줄 게시글 수
 		
 		double total = boardDao.getTotal();				//전체 페이지 갯수
-		int pageBlock = 8; 								// 아래쪽 pagination에 한번에 보여지는 갯수
-		
+		int pageBlock =3; 								// 아래쪽 pagination에 한번에 보여지는 갯수
 		
 		int pageTotal = (int)(Math.ceil(total / pagePerList));				//아래쪽 페이지 출력 갯수
-		int pageStart = (int)((clickPage-1)/pageBlock)*pageBlock+1;			//clickPage가1~4까지일떄는 int가 소수점을 탈락시키기떄문에 pageBlock을 곱해도 0으로 계산되고 +1하면 결과로 1이 나온다
+		
+		int pageStart = (int)(clickPage-1)/pageBlock*pageBlock+1;			//clickPage가1~4까지일떄는 int가 소수점을 탈락시키기떄문에 pageBlock을 곱해도 0으로 계산되고 +1하면 결과로 1이 나온다
 		int pageEnd = pageStart+pageBlock-1;	
-		if(pageEnd==pageTotal)pageEnd = pageTotal;
+		if(pageEnd>pageTotal)pageEnd = pageTotal;
+		System.out.println(pageStart+"///"+pageEnd);
+		System.out.println("clickPage=="+clickPage);
+		
 		
 		
 //		int start =StrStart==null ? 1 : Integer.parseInt(StrStart);
@@ -73,6 +76,7 @@ public class ListController extends HttpServlet {
 //		request.setAttribute("pagePerList", (int)pagePerList);
 //		request.setAttribute("pageBlock", pageBlock);
 		request.setAttribute("clickPage", clickPage);
+		request.setAttribute("tempclickPage", tempClickPage);
 //		request.setAttribute("pageStart", pageStart);
 //		request.setAttribute("pageEnd", pageEnd);
 		request.setAttribute("pageDto",pageDto);

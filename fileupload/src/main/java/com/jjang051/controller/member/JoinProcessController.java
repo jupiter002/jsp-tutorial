@@ -51,15 +51,15 @@ public class JoinProcessController extends HttpServlet {
 		MultipartRequest multipartRequest = new MultipartRequest(request, savePath, fileSize, encoding, fileRenamePolicy);
 		
 		
-		String userId = request.getParameter("userId"); 
-		String userPw = request.getParameter("userPw"); 
-		String userName = request.getParameter("userName"); 
-		String userEmail = request.getParameter("userEmail"); 
-		int zonecode = Integer.parseInt(request.getParameter("zonecode")); 
+		String userId = multipartRequest.getParameter("userId"); 
+		String userPw = multipartRequest.getParameter("userPw"); 
+		String userName = multipartRequest.getParameter("userName"); 
+		String userEmail = multipartRequest.getParameter("userEmail"); 
+		int zonecode = Integer.parseInt(multipartRequest.getParameter("zonecode")); 
 		System.out.println(zonecode);
-		String userAddress = request.getParameter("userAddress"); 
-		String detailAddress = request.getParameter("detailAddress"); 
-		String extraAddress = request.getParameter("extraAddress"); 
+		String userAddress = multipartRequest.getParameter("userAddress"); 
+		String detailAddress = multipartRequest.getParameter("detailAddress"); 
+		String extraAddress = multipartRequest.getParameter("extraAddress"); 
 		
 		String originalFile = multipartRequest.getOriginalFileName("profile");
 		String renameFile = multipartRequest.getFilesystemName("profile");
@@ -74,6 +74,8 @@ public class JoinProcessController extends HttpServlet {
 		memberDto.setExtraAddress(extraAddress);
 		memberDto.setDetailAddress(detailAddress);
 		memberDto.setEmail(userEmail);
+		
+		
 		int result = memberDao.insertMember(memberDto);
 		if(result>0) {
 			ScriptWriter.alertAndNext(response, "회원가입 되었습니다.", "../member/login");

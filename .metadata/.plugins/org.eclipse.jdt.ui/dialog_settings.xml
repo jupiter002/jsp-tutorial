@@ -79,7 +79,15 @@
 		<item key="expanded8" value="false"/>
 	</section>
 	<section name="BuildPathsPropertyPage">
+<<<<<<< HEAD
 		<item key="pageIndex" value="3"/>
+=======
+<<<<<<< HEAD
+		<item key="pageIndex" value="3"/>
+=======
+		<item key="pageIndex" value="2"/>
+>>>>>>> 09cf2c4d8afa88da082e2a2cecaea8ee37828a1a
+>>>>>>> ba052d2d55632a655d914b02367b7cbadc894e0d
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.typehierarchy.QuickHierarchy">
 		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_WIDTH" value="450"/>
@@ -87,9 +95,14 @@
 		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_SIZE" value="true"/>
 		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_LOCATION" value="false"/>
 	</section>
+<<<<<<< HEAD
+=======
 	<section name="ClasspathContainerSelectionPage">
 		<item key="index" value="9"/>
 	</section>
+<<<<<<< HEAD
+>>>>>>> 09cf2c4d8afa88da082e2a2cecaea8ee37828a1a
+=======
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
 		<item key="layout" value="2"/>
@@ -126,4 +139,5 @@
 		<item key="patterns" value="*"/>
 		<item key="renameSubpackages" value="false"/>
 	</section>
+>>>>>>> c46af6348bb6fa42ca049d5563821a3de77f373b
 </section>

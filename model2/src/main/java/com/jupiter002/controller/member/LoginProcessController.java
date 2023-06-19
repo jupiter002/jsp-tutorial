@@ -25,6 +25,11 @@ public class LoginProcessController extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		MemberDao memberDao = new MemberDao();
 		MemberDto memberDto = new MemberDto();
+//		String userId = request.getParameter("userId");
+//		String userPw = request.getParameter("userPw");
+//		memberDto.setId(userId);
+//		memberDto.setPassword(userPw);
+		
 		String userId = request.getParameter("userId");
 		String userPw = request.getParameter("userPw");
 		memberDto.setId(userId);
@@ -41,6 +46,7 @@ public class LoginProcessController extends HttpServlet {
 		}else {
 			ScriptWriter.alertAndBack(response, "알 수 없는 오류가 발생했습니다. 잠시 후 다시 시도해 주세요");
 		}
+		System.out.println(loggedMember.toString());
 		//System.out.println(loggedMember.toString());
 	
 	}

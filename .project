@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>model2</name>
+	<name>jsp-tutorial</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -30,11 +30,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-<<<<<<< HEAD
-			<id>1686750349646</id>
-=======
-			<id>1686820062621</id>
->>>>>>> c46af6348bb6fa42ca049d5563821a3de77f373b
+			<id>1686137036290</id>
 			<name></name>
 			<type>30</type>
 			<matcher>

@@ -93,6 +93,7 @@ public class MemberDao {
 	public MemberDto infoMember(MemberDto memberDto) {
 		MemberDto infoMemberDto = null;
 		getConnection();
+
 		String sql = "select id,name,email,address,lpad(zonecode 5,'0') as zonecode detailaddress extraaddress from member where id = ?"; //쿼리문 작성
 		try {
 			pstmt = conn.prepareStatement(sql);			//쿼리문 날림
@@ -115,6 +116,8 @@ public class MemberDao {
 		}
 	return infoMemberDto;
 	}
+	
+	
 	
 	public int modifyMember(MemberDto memberDto) {
 		int result = 0;
@@ -201,5 +204,9 @@ public class MemberDao {
 		}
 		return result;
 		
+		
+	
+	
+}
 	}	
-	}
+	

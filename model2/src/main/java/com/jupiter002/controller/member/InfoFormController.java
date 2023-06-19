@@ -1,6 +1,6 @@
 package com.jupiter002.controller.member;
 
-import java.io.IOException; 
+import java.io.IOException;  
 
 
 import jakarta.servlet.RequestDispatcher;
@@ -9,6 +9,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 import com.jupiter002.model.MemberDao;
 import com.jupiter002.model.MemberDto;
@@ -24,11 +25,21 @@ public class InfoFormController extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestDispatcher dispathcer = request.getRequestDispatcher("/WEB-INF/member/info.jsp");
 		dispathcer.forward(request, response);
+		MemberDto memberDto = new MemberDto();
+		MemberDao memberDao = new MemberDao();
+		MemberDto getinfo = memberDao.infoMember(memberDto);
+		
+		HttpSession session = request.getSession();
+			session.setAttribute("getinfoID", getinfo.getId());
+			session.setAttribute("getinfo", getinfo);
+		
 		
 		
 		
 	
 	}
+	
+
 	
 
 }

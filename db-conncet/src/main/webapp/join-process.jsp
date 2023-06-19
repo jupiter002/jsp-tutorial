@@ -7,11 +7,10 @@
     pageEncoding="UTF-8"%>
 <!--prettier-ignore-->
 <%
-	request.setCharacterEncoding("utf-8");
 	String pUserId = request.getParameter("userId");
 	int pUserPw = Integer.parseInt(request.getParameter("userPw"));
 	String pUserName = request.getParameter("userName");
-	String pUserEmail = request.getParameter("userEmail");
+	String pUserEmail = reqeust.getParameter("userEmail");
 	int pZonecode = Integer.parseInt(request.getParameter("zonecode"));
 	String pUserAddress = request.getParameter("userAddress");
 	String pDetailAddress = request.getParameter("detailAddress");
@@ -28,26 +27,29 @@
 	PreparedStatement pstmt = null;
 	ResultSet rs = null;
 	
-	String sql = "insert into member values (?,?,?,?,?,?,?,?)";		//
+	String sql = "insert into member values (?,?,?,?,?,?,?,?,?)";		//
 	
 	Class.forName(driver);
 	conn = DriverManager.getConnection(url, id, pw);	//db에 연결
 	pstmt = conn.prepareStatement(sql);
+	
 	pstmt.setString(1,pUserId);
 	pstmt.setString(2,pUserName);
 	pstmt.setInt(3,pUserPw);
-	pstmt.setString(4,pUserEmail);
-	
-	pstmt.setInt(5,pZonecode);
-	pstmt.setString(6,pUserAddress);
-	pstmt.setString(7,pDetailAddress);
-	pstmt.setString(8,pExtraAddress);
+	pstmt.setInt(4,pUserPw);
+	pstmt.setString(5,pUserEmail);
+	pstmt.setInt(6,pZonecode);
+	pstmt.setString(7,pUserAddress);
+	pstmt.setString(8,pDetailAddress);
+	pstmt.setString(9,pExtraAddress);
 
 	int result = pstmt.executeUpdate();		// select를 제외한 나머지 update, delete, insert
 	if(result>0){
 		response.sendRedirect("login-form.jsp");
 	}else{
-		out.println("<script> alert('서버오류입니다. 잠시후에 다시 시도해 주세요');history.back();</script>");
 
-	}
- //history.back() 한단계 뒤로 } %>
+<script>
+  alert("서버오류입니다. 잠시후에 다시 시도해 주세요");
+  history.back();
+</script>
+"); //history.back() 한단계 뒤로 } %>

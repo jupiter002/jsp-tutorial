@@ -5,6 +5,9 @@
 .contents {
   white-space: pre-wrap;
 }
+.note-icon-caret {
+  display: none !important;
+}
 .profile {
   border-radius: 100%;
   width: 50px;
@@ -12,4 +15,8 @@
   object-fit: cover;
   object-position: center;
   border: 1px solid #999;
+}
+.profileBox{
+	text-align: center;
+	flex-direction: column;	
 }

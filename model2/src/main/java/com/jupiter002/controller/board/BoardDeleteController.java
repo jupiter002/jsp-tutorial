@@ -1,14 +1,15 @@
 package com.jupiter002.controller.board;
 
-import jakarta.servlet.ServletException; 
-import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 import com.jupiter002.model.BoardDao;
 import com.jupiter002.utils.ScriptWriter;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/board/delete")
 public class BoardDeleteController extends HttpServlet {

@@ -15,7 +15,7 @@
           <label for="floatingPassword">새 비밀번호 확인</label>
           <input type="password" name="newUserPw02" class="form-control" id="floatingPassword02" placeholder="Password" />
         </div>
-        
+
         <div class="text-center">
           <button type="submit" class="btn btn-primary btn-lg" id="btnSubmit">비밀번호 변경</button>
         </div>
@@ -24,29 +24,47 @@
   </div>
 </form>
 <script>
-  const pwForm = document.forms.pwForm;				//forms는 배열로 떨어짐		기존 배열처럼 [n]인덱스로 접근 하면 됨
-  
-  
-  btnSubmit.addEventListener("click", (e) => {
-   if (pwForm.elements.userPw.value.trim() === "") {		//trim 공백을 삭제
+  const pwForm = document.forms.pwForm; //forms는 배열로 떨어짐.		기존 배열처럼 [n]인덱스로 접근 하면 됨
+  const btnSubmit = document.querySelector("#btnSubmit");
+  btnSubmit.addEventListener("click", () => {
+    if (pwForm.elements.userPw.value.trim() === "") {
       e.preventDefault();
-      alert("비밀번호를 입력하세요.");
-      pwForm.elements.userPw.focus();
-    } else if (pwForm.elements.newUserPw.value.trim() === "") {
-        e.preventDefault();
-        alert("새 비밀번호를 입력하세요.");
-        pwForm.elements.newUserPw.focus();
-    }else if (pwForm.elements.userPw.value === pwForm.elements.newUserPw.value) {
-        e.preventDefault();
-        alert("기존 비밀번호와 같습니다.");
-        pwForm.elements.newUserPw.focus();
-      } 
-    else if (pwForm.elements.newUserPw.value != pwForm.elements.newUserPw02.value) {
+      alert("비밀번호를 입력해주세요");
+      pwForm.elemntets.userPw.focus();
+    } else if (pwForm.elements.newUesrPw.value.trim() === "") {
       e.preventDefault();
-      alert("새 비밀번호가 맞지않습니다.");
-      pwForm.elements.newUserPw02.focus();
+      alert("새 비밀번호를 입력해주세요");
+      pwForm.elemnets.newUesrPw.focus();
+    } else if (pwForm.elements.UesrPw.value === pwForm.elements.newUesrPw.value) {
+      e.preventDefault();
+      alert("기존 비밀번호와 같습니다.");
+      pwForm.elemnets.newUesrPw.focus();
+    } else if (pwForm.elements.newUesrPw.value !== pwForm.elements.newUesrPw02.value) {
+      e.preventDefault();
+      alert("비밀번호가 같지 않습니다.");
+      pwForm.elemnets.newUesrPw02.focus();
     }
   });
 
+  // btnSubmit.addEventListener("click", (e) => {
+  //  if (pwForm.elements.userPw.value.trim() === "") {		//trim 공백을 삭제
+  //     e.preventDefault();
+  //     alert("비밀번호를 입력하세요.");
+  //     pwForm.elements.userPw.focus();
+  //   } else if (pwForm.elements.newUserPw.value.trim() === "") {
+  //       e.preventDefault();
+  //       alert("새 비밀번호를 입력하세요.");
+  //       pwForm.elements.newUserPw.focus();
+  //   }else if (pwForm.elements.userPw.value === pwForm.elements.newUserPw.value) {
+  //       e.preventDefault();
+  //       alert("기존 비밀번호와 같습니다.");
+  //       pwForm.elements.newUserPw.focus();
+  //     }
+  //   else if (pwForm.elements.newUserPw.value != pwForm.elements.newUserPw02.value) {
+  //     e.preventDefault();
+  //     alert("새 비밀번호가 맞지않습니다.");
+  //     pwForm.elements.newUserPw02.focus();
+  //   }
+  // });
 </script>
 <%@ include file="include/footer.jsp" %>
