@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="8080"/>
+		<item key="selection" value=""/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="metadata"/>
 			<item value="w"/>
 			<item value="8080"/>
 			<item value="path"/>
@@ -22,7 +23,6 @@
 			<item value="pw"/>
 			<item value="requestuserId"/>
 			<item value="driver"/>
-			<item value="+ &quot;&lt;label&gt;&lt;span&gt;1단&lt;/span&gt;&lt;input type=&apos;checkbox&apos; name=&apos;dan&apos;value=&apos;1&apos;&gt;&lt;/label&gt;&quot;"/>
 		</list>
 		<list key="replacehistory">
 			<item value="driver"/>
