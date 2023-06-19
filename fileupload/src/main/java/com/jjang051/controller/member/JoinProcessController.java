@@ -1,29 +1,20 @@
 package com.jjang051.controller.member;
 
-import java.io.File;
+import java.io.File; 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
 
 
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
-import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 import com.jjang051.model.MemberDao;
 import com.jjang051.model.MemberDto;
 import com.jjang051.utils.ScriptWriter;
-import com.oreilly.servlet.MultipartRequest;
-import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 
@@ -92,20 +83,6 @@ private String GetToday() {
 	return new SimpleDateFormat("yyyy-mm-dd").format(System.currentTimeMillis());
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
