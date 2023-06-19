@@ -55,26 +55,27 @@ public class JoinProcessController extends HttpServlet {
 //			List<FileItem> items = upload.parseRequest(request);
 			List<FileItem> items = new ArrayList<>();
 			Iterator iterator = request.getFileNames();
-			while(iterator.next())
-			for(FileItem fileItem:items) {
-				if(fileItem.isFormField()) {
-					
-				}else {
-					// 여기에 파일 들어옴. 여기에서 파일 관련된 것들 즉 이름바꾸기 등을 처리한다.
-					System.out.println("fieldName==="+fileItem.getFieldName());
-					String orginalName = fileItem.getName();
-					System.out.println("originalName==="+orginalName);
-					String extension = orginalName.substring(orginalName.lastIndexOf("."));		//lastIndexOf()뒤에서 처음 나오는 무언가를 찾음
-					UUID uuid = UUID.randomUUID();
-					System.out.println(uuid);
-					String fileName = uuid+extension;
-					
-					
-					File uploadPath = new File(currentDir+"\\"+GetToday());
-					if(!uploadPath.exists()) {
-						uploadPath.mkdir();
+			while(iterator.next()) {
+				for(FileItem fileItem:items) {
+					if(fileItem.isFormField()) {
+						
+					}else {
+						// 여기에 파일 들어옴. 여기에서 파일 관련된 것들 즉 이름바꾸기 등을 처리한다.
+						System.out.println("fieldName==="+fileItem.getFieldName());
+						String orginalName = fileItem.getName();
+						System.out.println("originalName==="+orginalName);
+						String extension = orginalName.substring(orginalName.lastIndexOf("."));		//lastIndexOf()뒤에서 처음 나오는 무언가를 찾음
+						UUID uuid = UUID.randomUUID();
+						System.out.println(uuid);
+						String fileName = uuid+extension;
+						
+						
+						File uploadPath = new File(currentDir+"\\"+GetToday());
+						if(!uploadPath.exists()) {
+							uploadPath.mkdir();
+						}
+						fileItem.write(currentDir);
 					}
-					fileItem.write(currentDir);
 				}
 			}
 				
