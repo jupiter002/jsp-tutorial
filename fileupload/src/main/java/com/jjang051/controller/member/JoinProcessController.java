@@ -43,7 +43,7 @@ public class JoinProcessController extends HttpServlet {
 		request.setCharacterEncoding("utf-8"); 
 		String encoding = "utf-8";
 		int fileSize = 1024*1024*10;
-		String savePath = "C:\\Users\\y\\Documents\\Upload";
+		String savePath = "C:\\Users\\a\\OneDrive\\문서\\Upload";
 		File currentDir = new File(savePath);
 		
 		DefaultFileRenamePolicy fileRenamePolicy = new DefaultFileRenamePolicy();
