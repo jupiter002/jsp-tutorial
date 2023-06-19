@@ -1,6 +1,6 @@
 package com.jjang051.controller.member;
 
-import java.io.File; 
+import java.io.File;    
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 
@@ -18,15 +18,13 @@ import com.jjang051.utils.ScriptWriter;
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 
-
 @WebServlet("/member/joinProcess")
 public class JoinProcessController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+
     public JoinProcessController() {
         super();
     }
-
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("Loading...");
 		
@@ -34,23 +32,21 @@ public class JoinProcessController extends HttpServlet {
 		request.setCharacterEncoding("utf-8"); 
 		String encoding = "utf-8";
 		int fileSize = 1024*1024*10;
-		String savePath = "C:\\Users\\a\\OneDrive\\문서\\Upload";
+		String savePath = "C:\\Users\\a\\Pictures\\Upload";
 		File currentDir = new File(savePath);
 		
 		DefaultFileRenamePolicy fileRenamePolicy = new DefaultFileRenamePolicy();
 		
 		MultipartRequest multipartRequest = new MultipartRequest(request, savePath, fileSize, encoding, fileRenamePolicy);
 		
-		
 		String userId = multipartRequest.getParameter("userId"); 
 		String userPw = multipartRequest.getParameter("userPw"); 
 		String userName = multipartRequest.getParameter("userName"); 
 		String userEmail = multipartRequest.getParameter("userEmail"); 
-		int zonecode = Integer.parseInt(multipartRequest.getParameter("zonecode")); 
-		System.out.println(zonecode);
-		String userAddress = multipartRequest.getParameter("userAddress"); 
+		int zonecode = Integer.parseInt(multipartRequest.getParameter("zonecode"));
+		String userAddress = multipartRequest.getParameter("userAddress");
 		String detailAddress = multipartRequest.getParameter("detailAddress"); 
-		String extraAddress = multipartRequest.getParameter("extraAddress"); 
+		String extraAddress = multipartRequest.getParameter("extraAddress");
 		
 		String originalFile = multipartRequest.getOriginalFileName("profile");
 		String renameFile = multipartRequest.getFilesystemName("profile");
@@ -65,7 +61,8 @@ public class JoinProcessController extends HttpServlet {
 		memberDto.setExtraAddress(extraAddress);
 		memberDto.setDetailAddress(detailAddress);
 		memberDto.setEmail(userEmail);
-		
+		memberDto.setProfile(originalFile);
+		memberDto.setRealProfile(renameFile);
 		
 		int result = memberDao.insertMember(memberDto);
 		if(result>0) {
@@ -75,14 +72,10 @@ public class JoinProcessController extends HttpServlet {
 		}
 	}
 
-
-
 private String GetToday() {
 	
-	
 	return new SimpleDateFormat("yyyy-mm-dd").format(System.currentTimeMillis());
-}
-}
+	}
 
-
+}
 

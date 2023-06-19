@@ -16,6 +16,8 @@ create table member(                                  --¸â¹ö Å×ÀÌºí¾È¿¡ ÄÃ·³µé
     extraaddress     VARCHAR2(100)
     );  
 
+alter table member add profile VARCHAR2(100);
+alter table member add realProfile VARCHAR2(100);
 --crud - Create Read Update Delete
 insert into member (id,name,password) values ('jupiter002','±èÁöÈÆ','1234');
 insert into member (id,name,password) values ('hong','È«±æµ¿','5678');
