@@ -56,9 +56,8 @@ public class BoardDao {
 	public int writeBoard(BoardDto boardDto) {
 		int result = 0;
 		int max = getMaxregroup();
-		max++;
 		getConnection();
-		String sql = "insert into replyboard values(SEQ_REPLYBOARD.nextval,?,?,?,?,sysdate,0,?,?,?,1)";
+		String sql = "insert into replyboard values(seq_replyboard.nextval,?,?,?,?,sysdate,0,?,?,?,1)";
 		
 		
 		try {
@@ -67,7 +66,7 @@ public class BoardDao {
 			pstmt.setString(2, boardDto.getName());
 			pstmt.setString(3, boardDto.getTitle());
 			pstmt.setString(4, boardDto.getContents());
-			pstmt.setInt(5, max);
+			pstmt.setInt(5, max+1);
 			pstmt.setInt(6, 1);
 			pstmt.setInt(7, 1);
 			result = pstmt.executeUpdate();
@@ -83,8 +82,7 @@ public class BoardDao {
 	public int upadteRelevel(BoardDto boardDto) {
 		int result=0;
 		getConnection();
-		String sql = "upadte replyboard set relevel = relevel+1"+
-				" where regroup = ? and relevel > ?";
+		String sql = "update replyboard set relevel = relevel+1 where regroup = ? and relevel > ?";
 		try {
 			pstmt=conn.prepareStatement(sql);
 			pstmt.setInt(1,boardDto.getRegroup());

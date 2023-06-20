@@ -34,7 +34,7 @@
 				</c:choose>
 				<td>${boardDto.name }</td>
 				<td>${boardDto.regDate }</td>
-				<td>${boardDto.hit }<span>${clickPage }</span></td>
+				<td>${boardDto.hit }</td>
 			</tr>
 			</c:forEach>
 		</tbody>
