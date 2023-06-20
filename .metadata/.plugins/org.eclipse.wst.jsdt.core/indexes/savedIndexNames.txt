@@ -1,22 +1,7 @@
-INDEX VERSION 1.4+C:\Users\y\Desktop\kjh\jsp\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-2184518948.index
+INDEX VERSION 1.4+C:\Users\a\OneDrive\¹®¼­\GitHub\jsp-tutorial\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 2950284601.index
-1790802421.index
-142165651.index
+3438914925.index
 3450809549.index
 3136247592.index
-1004693573.index
-1511018850.index
-3682135354.index
-2735161392.index
-3445193774.index
 1067094681.index
-3438914925.index
-3906261024.index
-3682135354.index
-2021741363.index
-3273729564.index
-769047569.index
-360460392.index
-2597602176.index
-680404488.index
+1790802421.index

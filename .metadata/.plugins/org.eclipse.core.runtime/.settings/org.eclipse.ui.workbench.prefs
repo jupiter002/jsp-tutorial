@@ -1,5 +1,8 @@
+=\=\=\=\=\=\=
 //org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
 //org.eclipse.ui.commands/state/org.eclipse.wst.xml.views.XPathView.processor.xpathprocessor/org.eclipse.ui.commands.radioState=xpath10
+<<<<<<<=HEAD
+>>>>>>>=ba052d2d55632a655d914b02367b7cbadc894e0d
 PLUGINS_NOT_ACTIVATED_ON_STARTUP=;org.eclipse.m2e.discovery;
 eclipse.preferences.version=1
 org.eclipse.compare.contentmergeviewer.TextMergeViewer=1|Consolas|12.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
@@ -11,19 +14,7 @@ org.eclipse.egit.ui.CommitMessageFont=1|Consolas|12.0|0|WINDOWS|1|0|0|0|0|0|0|0|
 org.eclipse.egit.ui.DiffHeadlineFont=1|Consolas|12.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
 org.eclipse.jdt.internal.ui.compare.JavaMergeViewer=1|Consolas|12.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
 org.eclipse.jdt.internal.ui.compare.PropertiesFileMergeViewer=1|Consolas|12.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
-<<<<<<< HEAD
 org.eclipse.jdt.ui.ColoredLabels.match_highlight=206,92,0
-=======
-<<<<<<< HEAD
-org.eclipse.jdt.ui.ColoredLabels.match_highlight=206,92,0
-=======
-org.eclipse.jdt.ui.ColoredLabels.inherited=143,143,191
-org.eclipse.jdt.ui.ColoredLabels.match_highlight=206,92,0
-org.eclipse.jdt.ui.ColoredLabels.writeaccess_highlight=255,128,128
-org.eclipse.jdt.ui.Javadoc.backgroundColor=52,57,61
-org.eclipse.jdt.ui.Javadoc.foregroundColor=238,238,238
->>>>>>> 09cf2c4d8afa88da082e2a2cecaea8ee37828a1a
->>>>>>> ba052d2d55632a655d914b02367b7cbadc894e0d
 org.eclipse.jdt.ui.PropertiesFileEditor.textfont=1|Consolas|12.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
 org.eclipse.jdt.ui.editors.textfont=1|Consolas|12.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
 org.eclipse.jface.textfont=1|Consolas|12.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;

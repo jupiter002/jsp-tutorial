@@ -1,28 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<section name="NewWizardAction">
-<<<<<<< HEAD
-<<<<<<< HEAD
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
-		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.jdt.ui.java"/>
-			<item value="org.eclipse.jdt.ui.java/org.eclipse.jdt.debug.ui.java"/>
-			<item value="org.eclipse.pde.PDE"/>
-=======
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jst.servlet.ui.internal.wizard.AddServletWizard"/>
-=======
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard"/>
->>>>>>> c46af6348bb6fa42ca049d5563821a3de77f373b
-		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.wst.web.ui"/>
->>>>>>> 09cf2c4d8afa88da082e2a2cecaea8ee37828a1a
-		</list>
-	</section>
-	<section name="InstallationDialogSettings">
-		<item key="DIALOG_X_ORIGIN" value="40"/>
-		<item key="DIALOG_Y_ORIGIN" value="-206"/>
-		<item key="DIALOG_WIDTH" value="700"/>
-		<item key="DIALOG_HEIGHT" value="738"/>
-		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
-	</section>
 </section>

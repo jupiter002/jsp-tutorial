@@ -35,7 +35,7 @@
 					</c:when>
 					<c:otherwise>
 						<li class="nav-item"><a href="../member/logout" class="nav-link">logout</a></li>
-						<li class="nav-item">
+						<li class="nav-item">6
 							<a href="../member/info?userId=${loggedMember.id }" class="nav-link">
 								<div class="profile">
 										<img src="${pageContext.request.contextPath}/upload${loggedMember.realProfile}" class="profile">
