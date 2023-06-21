@@ -2,7 +2,6 @@ select * from member where id = 'a';
 
 drop table member;
 
-
 create table member(                                  --멤버 테이블안에 컬럼들
     id               varchar2(100) unique not null,   --중복방지  
     --컬럼명          데이터타입      제약조건                                   
@@ -16,8 +15,6 @@ create table member(                                  --멤버 테이블안에 컬럼들
     extraaddress     VARCHAR2(100)
     );  
 
-alter table member add profile VARCHAR2(100);
-alter table member add realProfile VARCHAR2(100);
 --crud - Create Read Update Delete
 insert into member (id,name,password) values ('jupiter002','김지훈','1234');
 insert into member (id,name,password) values ('hong','홍길동','5678');
@@ -38,7 +35,7 @@ update member set name = '정형돈',email = 'jupiter002@naver.com' where id = 'jup
 update member set password = '1234' where id 'jupiter002' and password = '12';
 
 //자동증가 auto increament my sql
-create table board(
+create table replyboard(
     id          number primary key,     --글의 고유번호
     userId      varchar2(100),          --member id를 통한 조회
     name        varchar2(100) not null, -- 게시판에서의 이름
@@ -46,14 +43,31 @@ create table board(
     contents    clob not null,
     regdate     date default sysdate,
     hit         number,
-    constraint  fk_userid foreign key(userId) references member (id)        --costraint: 제약
+    regroup     number not null,
+    relevel     number not null,
+    restep      number not null,
+    available   number(1) default 0,
+    constraint  fk02_userid foreign key(userId) references member (id)        --costraint: 제약
     --  constraint  사용자지정 이름 foreign key(현재테이블의 컬럼명) references member (외부에서 가져올 컬럼명)
 );
-drop table board;
+
+drop table replyboard;
+delete from replyboard;
+commit;
+select nvl( max(regroup),1 ) as regroupMax from replyboard;
+
+select * from replyboard;
+
+select rownum as no, b.* from(
+    select * from replyboard order by regroup desc, relevel asc
+) b;
+
+--원글에 대한 댓글을 쓸때 내가 가진 regroup안의 relevel은 1증가 시킨다
+
+update replyboard set relevel=relevel+1 where regroup = 3 and relevel > 1;
 
 
 insert into board values (seq_board.nextval,'qw','흐엉','제목입니다','내용입니다',sysdate,0);
-
 
 
 rollback;

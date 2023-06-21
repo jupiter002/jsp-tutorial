@@ -1,4 +1,4 @@
-commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>tomcat error</message>\r\n<message>summernote write</message>\r\n<message>\uAC8C\uC2DC\uD310 \uC791\uC131 \uBC0F \uC218\uC815</message>\r\n<message>121</message>\r\n<message>111</message>\r\n<message>0609 model2</message>\r\n<message>oracle</message>\r\n<message>\uD68C\uC6D0\uC815\uBCF4 \uC218\uC815 / \uD0C8\uD1F4</message>\r\n<message>\uD68C\uC6D0\uC815\uBCF4 \uC218\uC815 \uBC0F \uD0C8\uD1F4</message>\r\n</messages>
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>commit</message>\r\n<message>reply</message>\r\n<message>tomcat error</message>\r\n<message>summernote write</message>\r\n<message>\uAC8C\uC2DC\uD310 \uC791\uC131 \uBC0F \uC218\uC815</message>\r\n<message>121</message>\r\n<message>111</message>\r\n<message>0609 model2</message>\r\n<message>oracle</message>\r\n<message>\uD68C\uC6D0\uC815\uBCF4 \uC218\uC815 / \uD0C8\uD1F4</message>\r\n</messages>
 eclipse.preferences.version=1
 repositories_view_filters=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<FilterCache/>
 resourcehistory_graph_split=500,500
